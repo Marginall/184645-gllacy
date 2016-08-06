@@ -46,7 +46,11 @@
           </ul>
         </nav>
         <div class="user-block">
-          <div class="user-search"></div>
+          <div class="user-search">
+            <form action="echo.htmlacademy.ru" method="post">
+              <input type="search" placeholder="Что ищем?">
+            </form>
+          </div>
           <div class="user-login">
             <a href="#">Вход</a>
           </div>
@@ -168,6 +172,28 @@
           <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
         </div>
       </footer>
+    </div>
+    <div class="popup-form">
+      <h2>Мы обязательно вам ответим!</h2>
+      <form action="echo.htmlacademy.ru" method="post">
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="text" name="e-mail" placeholder="Ваша почта для ответа?">
+        <textarea placeholder="Напишите что-нибудь.."></textarea>
+        <button type="submit">Отправить</button>
+        <button class="popup-form-close" type="button"></button>
+      </div>
+      <div class="popup-login">
+        <form action="echo.htmlacademy.ru" method="post">
+          <input type="text" name="mail" placeholder="Электронная почта">
+          <input type="password" name="password" placeholder="Пароль">
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </div>
+      <div class="popup-busket">
+        
+      </div>
     </div>
   </body>
 </html>
