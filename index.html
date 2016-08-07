@@ -30,9 +30,9 @@
         <div class="container">
           <div class="main-logo"><img src="http://placehold.it/160x66" width="160" height="66" alt="Лого"></div>
           <nav>
-            <ul>
-              <li>Каталог
-                <ul>
+            <ul class="main-menu">
+              <li class="catalog-menu">Каталог
+                <ul class="catalog-inner-menu">
                   <li>Новинки</li>
                   <li><a href="#">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
@@ -45,17 +45,18 @@
             </ul>
           </nav>
           <div class="user-block">
-            <div class="user-search">
-              <form action="echo.htmlacademy.ru" method="post">
-                <input type="search" placeholder="Что ищем?">
-              </form>
-            </div>
+            <div class="user-search"></div>
             <div class="user-login">
               <a href="#">Вход</a>
             </div>
-            <div class="user-busket">Пусто</div>
-            <span>С 10 до 20, ежедневно</span>
-            <span>8 812 450-25-25</span>
+            <div class="user-busket">
+              <div class="busket-noadd">Пусто</div>
+              <div class="busket-add">2 товара</div>
+            </div>
+            <div class="header-contacts">
+              <span>С 10 до 20, ежедневно</span>
+              <span class="tel">8 812 450-25-25</span>
+            </div>
           </div>
         </div>
       </header>
@@ -73,29 +74,49 @@
              вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
              <a href="#">Хочу шоколадки!</a>
           </div>
-          <div class="promo-item">
-            <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <div class="catalog-item">
+            <div class="item-hover">
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </div>
+            <figure>
+              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+              <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
+            </figure>
             <div class="item-decoration"></div>
             <span class="item-price">310&#8381;/кг</span>
           </div>
-          <div class="promo-item">
-            <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-            <p>Сливочно-кофейное с кусочками шоколада</p>
+          <div class="catalog-item">
+            <div class="item-hover">
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </div>
+            <figure>
+              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+              <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+            </figure>
             <div class="item-decoration"></div>
             <span class="item-price">380&#8381;/кг</span>
           </div>
-          <div class="promo-item">
-            <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <div class="catalog-item">
+            <div class="item-hover">
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </div>
+            <figure>
+              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+              <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+            </figure>
             <div class="item-decoration"></div>
             <span class="item-price">355&#8381;/кг</span>
           </div>
-          <div class="promo-item">
-            <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <div class="catalog-item">
+            <div class="item-hover">
+              <a class="btn" href="#">Быстрый просмотр</a>
+            </div>
+            <figure>
+              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+              <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+            </figure>
             <div class="item-decoration"></div>
-            <span class="item-price">310&#8381;/кг</span>
+            <span class="item-price">415&#8381;/кг</span>
           </div>
           <div class="features">
             <h2 class="features-title">Магазин Глейси  — это онлайн и офлайн магазин
@@ -194,7 +215,10 @@
         <a href="#">Новая регистрация</a>
       </form>
     </div>
-    <div class="popup-busket">
+    <div class="popup-search">
+      <form action="echo.htmlacademy.ru" method="post">
+        <input type="search" placeholder="Что ищем?">
+      </form>
     </div>
   </body>
 </html>
