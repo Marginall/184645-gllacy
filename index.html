@@ -9,6 +9,26 @@
   </head>
   <body>
     <div class="wrapper">
+<!--      Не самый обычный и простой макет, конечно. Слайдеры с такими эффектами нечасто используют.
+          Похоже, ты хотел бы сделать слайдер с помощью абсолютного позиционирования. Но мне кажется, что лучше всё же ориентироваться на вариант со сменой фона страницы через jQuery.
+          В общем, я бы делал как-то так:
+          <div class="wrapper">
+           <header>
+             ...
+           </header>
+           <div class="carousel">
+             <div class="slide slide-1">...</div>
+             <div class="slide slide-2">...</div>
+             <div class="slide slide-3">...</div>
+           </div>
+           <div class="promo-block">...</div>
+           ...
+           ...
+           ...
+           Кнопки (bg-btn), кстати, можно даже не вставлять в код вручную. Обычно они включаются в настройках плагина в jquery.
+           Да, wrapper - общий для всей страницы. В нём весь контент.
+       -->
+
       <div class="promo-bg">
         <div class="bg-1">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
@@ -62,72 +82,78 @@
       </header>
       <main>
         <div class="container">
-          <div class="promo-block">
-            <h2 class="promo-title">Малинка даром!</h2>
-            <p>При покупке 2 кг любого фруктового мороженого,
-            добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#">Хочу варенье!</a>
-          </div>
-          <div class="promo-block">
-            <h2 class="promo-title">Шоколадки даром!</h2>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-             вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-             <a href="#">Хочу шоколадки!</a>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+          <div class="row">
+            <div class="promo-block">
+              <h2 class="promo-title">Малинка даром!</h2>
+              <p>При покупке 2 кг любого фруктового мороженого,
+              добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a href="#">Хочу варенье!</a>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">310&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="promo-block">
+              <h2 class="promo-title">Шоколадки даром!</h2>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+               вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+               <a href="#">Хочу шоколадки!</a>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">380&#8381;/кг</span>
           </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+          <div class="row">
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">310&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">355&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">380&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">415&#8381;/кг</span>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">355&#8381;/кг</span>
+            </div>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">415&#8381;/кг</span>
+            </div>
           </div>
           <div class="features">
             <h2 class="features-title">Магазин Глейси  — это онлайн и офлайн магазин
                 по продаже мороженого собственного производства на развес</h2>
             <div class="left-column">
               <div class="features-item">
+                <img class="features-icon" src="http://placehold.it/53x51" width="53" height="51" alt="icon">
                 <p>Все наше мороженое изготавливается на собственном производстве,
                 с использованием современного оборудования
                 и проверенных временем технологий.</p>
               </div>
               <div class="features-item">
+                <img class="features-icon" src="http://placehold.it/53x51" width="53" height="51" alt="icon">
                 <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
                   Все дополнительные ингредиенты и добавки произведены из натурального,
                   экологически чистого сырья. </p>
@@ -135,38 +161,42 @@
             </div>
             <div class="right-column">
               <div class="features-item">
+                <img class="features-icon" src="http://placehold.it/53x51" width="53" height="51" alt="icon">
                 <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
                 с которыми нас связывает долговременное сотрудничество.</p>
               </div>
               <div class="features-item">
+                <img class="features-icon" src="http://placehold.it/53x51" width="53" height="51" alt="icon">
                 <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
                 которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
               </div>
             </div>
           </div>
-          <div class="promo-block">
-            <h2 class="promo-news">Новое в нашем блоге</h2>
-            <p><a href="#">10  способов сервировки
-                фруктовых щербетов к столу</a></p>
-          </div>
-          <div class="promo-block">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-            что у нас происходит.
-            Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="text" placeholder="Электронная почта">
-              <button type="submit">Отправить</button>
-            </form>
+          <div class="row">
+            <div class="promo-block">
+              <h2 class="promo-news">Новое в нашем блоге</h2>
+              <p><a href="#">10  способов сервировки
+                  фруктовых щербетов к столу</a></p>
+            </div>
+            <div class="promo-block">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+              что у нас происходит.
+              Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+              <form class="newsletter" action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" placeholder="Электронная почта">
+                <button type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="main-map">
           <img src="http://placehold.it/1200x430" width="1200" height="430" alt="Карта">
           <div class="map-information">
-            <p>Адрес главного офиса и офлайн магазина:</p>
-            <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <span>Для заказов по телефону:</span>
-            <span>8 812 450-25-25</span>
-            <span>(с 10 до 20 ежедневно)</span>
+            <p class="common-text">Адрес главного офиса и офлайн магазина:</p>
+            <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+            <span class="common-text">Для заказов по телефону:</span>
+            <span class="tel">8 812 450-25-25</span>
+            <span class="common-text">(с 10 до 20 ежедневно)</span>
             <a class="form-show" href="#">Форма обратной связи</a>
           </div>
         </div>
@@ -210,14 +240,18 @@
       <form action="echo.htmlacademy.ru" method="post">
         <input type="text" name="mail" placeholder="Электронная почта">
         <input type="password" name="password" placeholder="Пароль">
-        <button type="submit">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+<!--        Эти кнопки и ссылки ниже тоже нужно взять в отдельный контейнер.-->
+        <div class="login-navigation">
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
       </form>
     </div>
     <div class="popup-search">
       <form action="echo.htmlacademy.ru" method="post">
         <input type="search" placeholder="Что ищем?">
+<!--        В любой форме должен быть button или input[type="submit"], иначе она не отправится. Разве что можно сделать его невидимым.-->
       </form>
     </div>
   </body>
