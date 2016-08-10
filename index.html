@@ -9,43 +9,27 @@
   </head>
   <body>
     <div class="wrapper">
-<!--      Не самый обычный и простой макет, конечно. Слайдеры с такими эффектами нечасто используют.
-          Похоже, ты хотел бы сделать слайдер с помощью абсолютного позиционирования. Но мне кажется, что лучше всё же ориентироваться на вариант со сменой фона страницы через jQuery.
-          В общем, я бы делал как-то так:
-          <div class="wrapper">
-           <header>
-             ...
-           </header>
-           <div class="carousel">
-             <div class="slide slide-1">...</div>
-             <div class="slide slide-2">...</div>
-             <div class="slide slide-3">...</div>
-           </div>
-           <div class="promo-block">...</div>
-           ...
-           ...
-           ...
-           Кнопки (bg-btn), кстати, можно даже не вставлять в код вручную. Обычно они включаются в настройках плагина в jquery.
-           Да, wrapper - общий для всей страницы. В нём весь контент.
-       -->
-
-      <div class="promo-bg">
-        <div class="bg-1">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="#">Давайте оба!</a>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="slide slide-1">
+            <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-2">
+            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2> 
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-3">
+            <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
         </div>
-        <div class="bg-2">
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <a href="#">Давайте оба!</a>
-        </div>
-        <div class="bg-3">
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <a href="#">Давайте оба!</a>
+        <div class="carousel-buttons">
+          <button class="bg-btn btn-1" type="button"></button>
+          <button class="bg-btn btn-2" type="button"></button>
+          <button class="bg-btn btn-3" type="button"></button>
         </div>
       </div>
-      <button class="bg-btn btn-1" type="button"></button>
-      <button class="bg-btn btn-2" type="button"></button>
-      <button class="bg-btn btn-3" type="button"></button>
       <header class="main-header">
         <div class="container">
           <div class="main-logo"><img src="http://placehold.it/160x66" width="160" height="66" alt="Лого"></div>
@@ -257,20 +241,20 @@
       <ul class="cart-item">
         <li><button class="item-del" type="button"></button></li>
         <li class="cart-img"></li>
-        <li cart-title>Пломбир с апельсиновым джемом</li>
-        <li>1,5 кг х 200 руб.</li>
-        <li>300 руб.</li>
+        <li class="cart-title">Пломбир с апельсиновым джемом</li>
+        <li class="cart-calculation">1,5 кг х 200 руб.</li>
+        <li class="cart-price">300 руб.</li>
       </ul>
       <ul class="cart-item">
         <li><button class="item-del" type="button"></button></li>
         <li class="cart-img"></li>
-        <li cart-title>Клубничный пломбир с присыпкой из белого шоколада</li>
-        <li>1,5 кг х 300 руб.</li>
-        <li>450 руб.</li>
+        <li class="cart-title">Клубничный пломбир с присыпкой из белого шоколада</li>
+        <li class="cart-calculation">1,5 кг х 300 руб.</li>
+        <li class="cart-price">450 руб.</li>
       </ul>
-      <span>Итого:</span>
-      <span>750 руб.</span>
-      <a href="#">Оформить заказ</a>
+      <span class="total">Итого:</span>
+      <span class="total-price">750 руб.</span>
+      <a class="cart-btn" href="#">Оформить заказ</a>
     </div>
   </body>
 </html>
