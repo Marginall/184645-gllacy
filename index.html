@@ -16,7 +16,7 @@
             <a class="slide-btn" href="#">Давайте оба!</a>
           </div>
           <div class="slide slide-2">
-            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2> 
+            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
             <a class="slide-btn" href="#">Давайте оба!</a>
           </div>
           <div class="slide slide-3">
@@ -35,7 +35,7 @@
           <div class="main-logo"><img src="http://placehold.it/160x66" width="160" height="66" alt="Лого"></div>
           <nav>
             <ul class="main-menu">
-              <li class="menu-item">Каталог
+              <li class="menu-item menu-catalog">Каталог
                 <ul class="catalog-inner-menu">
                   <li class="inner-menu-item">Новинки</li>
                   <li class="inner-menu-item"><a href="#">Сливочное</a></li>
@@ -48,14 +48,16 @@
               <li class="menu-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
-          <div class="user-block">
-            <div class="user-search"></div>
-            <div class="user-login">
-              <a href="#">Вход</a>
-            </div>
-            <div class="user-busket">
-              <div class="busket-noadd">Пусто</div>
-              <div class="busket-add">2 товара</div>
+          <div class="users-container">
+            <div class="user-block">
+              <div class="user-search"></div>
+              <div class="user-login">
+                <a href="#">Вход</a>
+              </div>
+              <div class="user-busket">
+                <div class="busket-noadd">Пусто</div>
+                <div class="busket-add">2 товара</div>
+              </div>
             </div>
             <div class="header-contacts">
               <span>С 10 до 20, ежедневно</span>
@@ -195,17 +197,17 @@
           </div>
           <div class="footer-menu">
             <div class="left-column">
-              <a href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
+              <a class="footer-menu-item" href="#">Для поставщиков</a>
+              <a class="footer-menu-item" href="#">О производстве</a>
             </div>
             <div class="right-column">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
+              <a class="footer-menu-item" href="#">Наши документы</a>
+              <a class="footer-menu-item" href="#">Экологические стандарты</a>
             </div>
           </div>
           <div class="footer-copyright">
             <img class="footer-logo" src="http://placehold.it/113x40" width="113" height="40" alt="htmlacademy.ru">
-            <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+            <p class="copyright-text">Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
           </div>
         </div>
       </footer>
@@ -238,22 +240,24 @@
       </form>
     </div>
     <div class="popup-cart">
-      <ul class="cart-item">
-        <li><button class="item-del" type="button"></button></li>
-        <li class="cart-img"></li>
-        <li class="cart-title">Пломбир с апельсиновым джемом</li>
-        <li class="cart-calculation">1,5 кг х 200 руб.</li>
-        <li class="cart-price">300 руб.</li>
-      </ul>
-      <ul class="cart-item">
-        <li><button class="item-del" type="button"></button></li>
-        <li class="cart-img"></li>
-        <li class="cart-title">Клубничный пломбир с присыпкой из белого шоколада</li>
-        <li class="cart-calculation">1,5 кг х 300 руб.</li>
-        <li class="cart-price">450 руб.</li>
-      </ul>
-      <span class="total">Итого:</span>
-      <span class="total-price">750 руб.</span>
+      <div class="cart-item">
+        <button class="item-del" type="button"></button>
+        <div class="cart-img"><img src="http://placehold.it/34x34" width="34" height="34" alt="Мороженое"></div>
+        <div class="cart-title">Пломбир с апельсиновым джемом</div>
+        <div class="cart-calculation">1,5 кг х <span class="cart-price">200 руб.</span></div>
+        <div class="total-cart-price">300 руб.</div>
+      </div>
+      <div class="cart-item">
+        <div><button class="item-del" type="button"></button></div>
+        <div class="cart-img"><img src="http://placehold.it/34x34" width="34" height="34" alt="Мороженое"></div>
+        <div class="cart-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+        <div class="cart-calculation">1,5 кг х <span class="cart-price">300 руб.</span></div>
+        <div class="total-cart-price">450 руб.</div>
+      </div>
+      <div class="total-box">
+        <span class="total-text">Итого:</span>
+        <span class="total">750 руб.</span>
+      </div>
       <a class="cart-btn" href="#">Оформить заказ</a>
     </div>
   </body>

@@ -14,27 +14,29 @@
           <div class="main-logo"><a href="index.html"><img src="http://placehold.it/160x66" width="160" height="66" alt="Лого"></a></div>
           <nav>
             <ul class="main-menu">
-              <li class="catalog-menu">Каталог
+              <li class="menu-item menu-catalog">Каталог
                 <ul class="catalog-inner-menu">
                   <li>Новинки</li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
+                  <li class="inner-menu-item"><a href="#">Сливочное</a></li>
+                  <li class="inner-menu-item"><a href="#">Щербеты</a></li>
+                  <li class="inner-menu-item"><a href="#">Фруктовый лед</a></li>
+                  <li class="inner-menu-item"><a href="#">Мелорин</a></li>
                 </ul>
               </li>
-              <li><a href="#">Дставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
+              <li class="menu-item"><a href="#">Дставка и оплата</a></li>
+              <li class="menu-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
-          <div class="user-block">
-            <div class="user-search"></div>
-            <div class="user-login">
-              <a href="#">Вход</a>
-            </div>
-            <div class="user-cart">
-              <div class="cart-noadd">Пусто</div>
-              <div class="cart-add">2 товара</div>
+          <div class="users-container">
+            <div class="user-block">
+              <div class="user-search"></div>
+              <div class="user-login">
+                <a href="#">Вход</a>
+              </div>
+              <div class="user-cart">
+                <div class="cart-noadd">Пусто</div>
+                <div class="cart-add">2 товара</div>
+              </div>
             </div>
             <div class="header-contacts">
               <span>С 10 до 20, ежедневно</span>
@@ -42,25 +44,25 @@
             </div>
           </div>
           <div class="breadcrumbs">
-            <a href="index.html">Главная</a>
-            <span>Каталог</span>
-            <a href="#">Сливочное</a>
+            <a class="breadcrumbs-item" href="index.html">Главная</a>
+            <a class="breadcrumbs-item" href="#">Каталог</a>
+            <span>Сливочное</span>
           </div>
         </div>
       </header>
       <main>
         <div class="container">
-          <h1>Сливочное мороженое</h1>
+          <h1 class="catalog-main-title">Сливочное мороженое</h1>
           <div class="catalog-sort">
             <form action="echo.htmlacademy.ru" method="post">
-              <label>Сортировка:
+              <div class="sort-title">Сортировка:
                 <select name="sort">
                     <option value="popular" selected>по популярности</option>
                     <option value="inexpensive">сначала недорогие</option>
                     <option value="expensive">сначала дорогие</option>
                     <option value="oil">по жирности</option>
                 </select>
-              </label>
+              </div>
               <div class="sort-range-filter">
                 <div class="sort-price-controls">Цена
                   <div class="controls-min">
@@ -79,165 +81,175 @@
                 <div class="sort-toggle sort-max-toggle"></div>
               </div>
               <div class="radio-box">
-                <span class="box-title">Жирность:</span>
-                <div class="box-bg">
-                  <label><input type="radio" name="oil">0%</label>
-                  <label><input type="radio" name="oil" checked>до 10%</label>
-                  <label><input type="radio" name="oil">до 30%</label>
-                  <label><input type="radio" name="oil">выше 30%</label>
+                <span class="radio-box-title">Жирность:</span>
+                <div class="radio-box-bg">
+                  <!--буду делать в виде label::after и label::before -->
+                  <label class="radio"><input type="radio" name="oil">0%</label>
+                  <label class="radio"><input type="radio" name="oil" checked>до 10%</label>
+                  <label class="radio"><input type="radio" name="oil">до 30%</label>
+                  <label class="radio"><input type="radio" name="oil">выше 30%</label>
                 </div>
               </div>
               <div class="check-box">
-                <span class="box-title">Наполнители:</span>
-                <div class="box-bg">
-                  <label><input type="checkbox" name="fillers" checked>шоколадные</label>
-                  <label><input type="checkbox" name="fillers" checked>сахарные присыпки</label>
-                  <label><input type="checkbox" name="fillers">фрукты</label>
-                  <label><input type="checkbox" name="fillers">сиропы</label>
-                  <label><input type="checkbox" name="fillers">джемы</label>
+                <span class="check-box-title">Наполнители:</span>
+                <div class="check-box-bg">
+                  <!--буду делать c помощью input:checked+span::after и span::before. Иконки нарисую в css -->
+                  <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>шоколадные</label>
+                  <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>сахарные присыпки</label>
+                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>фрукты</label>
+                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>сиропы</label>
+                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>джемы</label>
                 </div>
               </div>
-              <button type="submit">Применить</button>
+              <button class="sort-btn" type="submit">Применить</button>
             </form>
           </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+          <div class="item-row">
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">310&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">310&#8381;/кг</span>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">380&#8381;/кг</span>
+            </div>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">355&#8381;/кг</span>
+            </div>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">415&#8381;/кг</span>
+            </div>
           </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+          <div class="item-row">
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с брусничным джемом</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">325&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">380&#8381;/кг</span>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-черничное с цельными ягодами черники</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">410&#8381;/кг</span>
+            </div>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-лимонное с карамельной присыпкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">375&#8381;/кг</span>
+            </div>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с шоколадной стружкой</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">320&#8381;/кг</span>
+            </div>
           </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+          <div class="item-row">
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочно-ванильное с кусочками шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">440&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">355&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочноe с ментоловым сиропом</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">435&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">415&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с кусочками черного шоколада</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">355&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с брусничным джемом</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">325&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
+            <div class="catalog-item">
+              <div class="item-hover">
+                <a class="btn" href="#">Быстрый просмотр</a>
+              </div>
+              <figure>
+                <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
+                <figcaption>Сливочное с мятным сиропом</figcaption>
+              </figure>
+              <div class="item-decoration"></div>
+              <span class="item-price">420&#8381;/кг</span>
             </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-черничное с цельными ягодами черники</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">410&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-лимонное с карамельной присыпкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">375&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с шоколадной стружкой</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">320&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочно-ванильное с кусочками шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">440&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочноe с ментоловым сиропом</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">435&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с кусочками черного шоколада</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">355&#8381;/кг</span>
-          </div>
-          <div class="catalog-item">
-            <div class="item-hover">
-              <a class="btn" href="#">Быстрый просмотр</a>
-            </div>
-            <figure>
-              <img src="http://placehold.it/270x280" width="270" height="280" alt="Мороженое">
-              <figcaption>Сливочное с мятным сиропом</figcaption>
-            </figure>
-            <div class="item-decoration"></div>
-            <span class="item-price">420&#8381;/кг</span>
           </div>
           <div class="paginator">
+            <a class="arrow arrow-left" href="#"></a>
             <span class="active">1</span>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
+            <a class="arrow arrow-right" href="#"></a>
           </div>
         </div>
       </main>
@@ -251,17 +263,17 @@
           </div>
           <div class="footer-menu">
             <div class="left-column">
-              <a href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
+              <a class="footer-menu-item" href="#">Для поставщиков</a>
+              <a class="footer-menu-item" href="#">О производстве</a>
             </div>
             <div class="right-column">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
+              <a class="footer-menu-item" href="#">Наши документы</a>
+              <a class="footer-menu-item" href="#">Экологические стандарты</a>
             </div>
           </div>
           <div class="footer-copyright">
             <img class="footer-logo" src="http://placehold.it/113x40" width="113" height="40" alt="htmlacademy.ru">
-            <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
+            <p class="copyright-text">Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
           </div>
         </div>
       </footer>
@@ -291,23 +303,25 @@
       </form>
     </div>
     <div class="popup-cart">
-      <ul class="busket-item">
-        <li><button class="item-del" type="button"></button></li>
-        <li></li>
-        <li>Пломбир с апельсиновым джемом</li>
-        <li>1,5 кг х 200 руб.</li>
-        <li>300 руб.</li>
-      </ul>
-      <ul class="cart-item">
-        <li><button class="item-del" type="button"></button></li>
-        <li></li>
-        <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-        <li>1,5 кг х 300 руб.</li>
-        <li>450 руб.</li>
-      </ul>
-      <span>Итого:</span>
-      <span>750 руб.</span>
-      <a href="#">Оформить заказ</a>
+      <div class="cart-item">
+        <button class="item-del" type="button"></button>
+        <div class="cart-img"><img src="http://placehold.it/34x34" width="34" height="34" alt="Мороженое"></div>
+        <div class="cart-title">Пломбир с апельсиновым джемом</div>
+        <div class="cart-calculation">1,5 кг х <span class="cart-price">200 руб.</span></div>
+        <div class="total-cart-price">300 руб.</div>
+      </div>
+      <div class="cart-item">
+        <div><button class="item-del" type="button"></button></div>
+        <div class="cart-img"><img src="http://placehold.it/34x34" width="34" height="34" alt="Мороженое"></div>
+        <div class="cart-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+        <div class="cart-calculation">1,5 кг х <span class="cart-price">300 руб.</span></div>
+        <div class="total-cart-price">450 руб.</div>
+      </div>
+      <div class="total-box">
+        <span class="total-text">Итого:</span>
+        <span class="total">750 руб.</span>
+      </div>
+      <a class="cart-btn" href="#">Оформить заказ</a>
     </div>
   </body>
 </html>
