@@ -55,53 +55,55 @@
           <h1 class="catalog-main-title">Сливочное мороженое</h1>
           <div class="catalog-sort">
             <form action="echo.htmlacademy.ru" method="post">
-              <div class="sort-title">Сортировка:
-                <select name="sort">
-                    <option value="popular" selected>по популярности</option>
-                    <option value="inexpensive">сначала недорогие</option>
-                    <option value="expensive">сначала дорогие</option>
-                    <option value="oil">по жирности</option>
-                </select>
-              </div>
-              <div class="sort-range-filter">
-                <div class="sort-price-controls">Цена
-                  <div class="controls-min">
-                    <input class="min-price" type="text" name="min-price" value="100">руб.
+              <div class="sort-row-1">
+                <div class="sort-title">Сортировка:
+                  <select name="sort">
+                      <option value="popular" selected>по популярности</option>
+                      <option value="inexpensive">сначала недорогие</option>
+                      <option value="expensive">сначала дорогие</option>
+                      <option value="oil">по жирности</option>
+                  </select>
+                </div>
+                <div class="sort-range-filter">
+                  <div class="sort-price-controls">Цена
+                    <div class="controls-min">
+                      <input class="min-price" type="text" name="min-price" value="100">руб.
+                    </div>
+                    <div class="controls-max">-
+                      <input class="max-price" type="text" name="max-price" value="500">руб.
+                    </div>
                   </div>
-                  <div class="controls-max">-
-                    <input class="max-price" type="text" name="max-price" value="500">руб.
+                  <div class="filter-controls">
+                    <div class="filter-scale">
+                      <div class="scale-bar"></div>
+                    </div>
+                  </div>
+                  <div class="sort-toggle sort-min-toggle"></div>
+                  <div class="sort-toggle sort-max-toggle"></div>
+                </div>
+                <div class="radio-box">
+                  <span class="radio-box-title">Жирность:</span>
+                  <div class="radio-box-bg">
+                    <label class="radio"><input type="radio" name="oil">0%</label>
+                    <label class="radio"><input type="radio" name="oil" checked>до 10%</label>
+                    <label class="radio"><input type="radio" name="oil">до 30%</label>
+                    <label class="radio"><input type="radio" name="oil">выше 30%</label>
                   </div>
                 </div>
-                <div class="filter-controls">
-                  <div class="filter-scale">
-                    <div class="scale-bar"></div>
+              </div>
+              <div class="sort-row-2">
+                <div class="check-box">
+                  <span class="check-box-title">Наполнители:</span>
+                  <div class="check-box-bg">
+                    <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>шоколадные</label>
+                    <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>сахарные присыпки</label>
+                    <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>фрукты</label>
+                    <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>сиропы</label>
+                    <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>джемы</label>
                   </div>
                 </div>
-                <div class="sort-toggle sort-min-toggle"></div>
-                <div class="sort-toggle sort-max-toggle"></div>
+                <button class="sort-btn" type="submit">Применить</button>
               </div>
-              <div class="radio-box">
-                <span class="radio-box-title">Жирность:</span>
-                <div class="radio-box-bg">
-                  <!--буду делать в виде label::after и label::before -->
-                  <label class="radio"><input type="radio" name="oil">0%</label>
-                  <label class="radio"><input type="radio" name="oil" checked>до 10%</label>
-                  <label class="radio"><input type="radio" name="oil">до 30%</label>
-                  <label class="radio"><input type="radio" name="oil">выше 30%</label>
-                </div>
-              </div>
-              <div class="check-box">
-                <span class="check-box-title">Наполнители:</span>
-                <div class="check-box-bg">
-                  <!--буду делать c помощью input:checked+span::after и span::before. Иконки нарисую в css -->
-                  <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>шоколадные</label>
-                  <label class="checkbox"><input type="checkbox" name="fillers" checked><span class="checkbox-indicator"></span>сахарные присыпки</label>
-                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>фрукты</label>
-                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>сиропы</label>
-                  <label class="checkbox"><input type="checkbox" name="fillers"><span class="checkbox-indicator"></span>джемы</label>
-                </div>
-              </div>
-              <button class="sort-btn" type="submit">Применить</button>
             </form>
           </div>
           <div class="item-row">
