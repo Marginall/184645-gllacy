@@ -3,34 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="wrapper">
-      <div class="carousel-wrapper">
-        <div class="carousel">
-          <div class="slide slide-1">
-            <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
-            <a class="slide-btn" href="#">Давайте оба!</a>
-          </div>
-          <div class="slide slide-2">
-            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
-            <a class="slide-btn" href="#">Давайте оба!</a>
-          </div>
-          <div class="slide slide-3">
-            <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
-            <a class="slide-btn" href="#">Давайте оба!</a>
-          </div>
-        </div>
-        <div class="carousel-buttons">
-          <button class="bg-btn btn-1" type="button"></button>
-          <button class="bg-btn btn-2" type="button"></button>
-          <button class="bg-btn btn-3" type="button"></button>
-        </div>
-      </div>
       <header class="main-header">
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="slide slide-1">
+              <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide slide-2">
+              <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+            <div class="slide slide-3">
+              <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+              <a class="slide-btn" href="#">Давайте оба!</a>
+            </div>
+          </div>
+          <div class="carousel-buttons">
+            <button class="bg-btn btn-1" type="button"></button>
+            <button class="bg-btn btn-2" type="button"></button>
+            <button class="bg-btn btn-3" type="button"></button>
+          </div>
+        </div>
         <div class="container">
           <div class="main-logo"><img src="img/main-logo.svg" width="160" height="66" alt="Лого"></div>
           <nav>
@@ -50,13 +50,18 @@
           </nav>
           <div class="users-container">
             <div class="user-block">
-              <div class="user-search"></div>
-              <div class="user-login">
-                <a href="#">Вход</a>
+              <div class="user-search">
+                <div class="popup-search">
+                  <form action="echo.htmlacademy.ru" method="post">
+                    <input class="search" type="search" placeholder="Что ищем?">
+                    <input class="search-submit" type="submit">
+                  </form>
+                </div>
               </div>
-              <div class="user-busket">
-                <div class="busket-noadd">Пусто</div>
-                <div class="busket-add">2 товара</div>
+              <a class="user-login" href="#">Вход</a>
+              <div class="user-cart">
+                <div class="cart-noadd">Пусто</div>
+                <div class="cart-add">2 товара</div>
               </div>
             </div>
             <div class="header-contacts">
@@ -159,12 +164,12 @@
             </div>
           </div>
           <div class="row">
-            <div class="promo-block">
+            <div class="promo-block-news">
               <h2 class="promo-news">Новое в нашем блоге</h2>
               <p><a href="#">10  способов сервировки
                   фруктовых щербетов к столу</a></p>
             </div>
-            <div class="promo-block">
+            <div class="promo-block-newslatter">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
               что у нас происходит.
               Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
@@ -228,15 +233,11 @@
         <input class="login-password" type="password" name="password" placeholder="Пароль">
         <div class="login-navigation">
           <button class="login-btn" type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <div class="col">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
         </div>
-      </form>
-    </div>
-    <div class="popup-search">
-      <form action="echo.htmlacademy.ru" method="post">
-        <input class="search" type="search" placeholder="Что ищем?">
-        <input class="search-submit" type="submit">
       </form>
     </div>
     <div class="popup-cart">
