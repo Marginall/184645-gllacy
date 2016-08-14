@@ -10,10 +10,10 @@
   <body>
     <div class="wrapper inner-page">
       <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
           <div class="main-logo"><a href="index.html"><img src="img/main-logo.svg" width="160" height="66" alt="Лого"></a></div>
-          <nav>
-            <ul class="main-menu">
+          <nav class="main-menu">
+            <ul>
               <li class="menu-item menu-catalog">Каталог
                 <ul class="catalog-inner-menu">
                   <li>Новинки</li>
@@ -29,11 +29,26 @@
           </nav>
           <div class="users-container">
             <div class="user-block">
-              <div class="user-search"></div>
+              <div class="user-search">
+                <div class="popup-search">
+                  <form action="echo.htmlacademy.ru" method="post">
+                    <input type="search" placeholder="Что ищем?">
+                  </form>
+                </div>
+              </div>
               <div class="user-login">
                 <a href="#">Вход</a>
+                <div class="popup-login">
+                  <form action="echo.htmlacademy.ru" method="post">
+                    <input type="text" name="mail" placeholder="Электронная почта">
+                    <input type="password" name="password" placeholder="Пароль">
+                    <button type="submit">Войти</button>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </form>
+                </div>
               </div>
-              <div class="user-cart">
+              <div class="user-cart">Пусто
                 <div class="cart-noadd">Пусто</div>
                 <div class="cart-add">2 товара</div>
               </div>
@@ -288,20 +303,6 @@
         <textarea placeholder="Напишите что-нибудь.."></textarea>
         <button type="submit">Отправить</button>
         <button class="popup-form-close" type="button"></button>
-      </form>
-    </div>
-    <div class="popup-login">
-      <form action="echo.htmlacademy.ru" method="post">
-        <input type="text" name="mail" placeholder="Электронная почта">
-        <input type="password" name="password" placeholder="Пароль">
-        <button type="submit">Войти</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
-      </form>
-    </div>
-    <div class="popup-search">
-      <form action="echo.htmlacademy.ru" method="post">
-        <input type="search" placeholder="Что ищем?">
       </form>
     </div>
     <div class="popup-cart">

@@ -7,12 +7,170 @@ body {
   background-color: grey;
 }
 
- h1 {
-   font-size: 35px;
-   line-height: 41px;
+.clearfix {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
  }
 
- h2 {
-   font-size: 16px;
-   line-height: 22px;
- }
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.3%;
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+.container {
+  width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+figure {
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.main-header {
+  width: 100%;
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+.carousel-wrapper {
+  display: none;
+}
+
+.main-logo {
+  float: left;
+}
+
+.main-menu {
+  float: left;
+  width: 355px;
+  outline: 1px solid green;
+  outline-offset: -2px;
+}
+
+.menu-item {
+  float: left;
+}
+
+.menu-catalog {
+  display: none;
+  outline: 1px solid green;
+  outline-offset: -2px;
+}
+
+.users-container {
+  float: right;
+  width: 267px;
+  outline: 1px solid green;
+  outline-offset: -2px;
+}
+
+.user-search {
+  float: left;
+}
+
+.popup-search {
+  display: none;
+}
+
+.user-login {
+  float: left;
+}
+
+.user-cart {
+  float: left;
+}
+
+.cart-noadd {
+  display: none;
+}
+
+.cart-add {
+  display: none;
+}
+
+.header-contacts {
+  width: 170px;
+}
+
+.wrapper .row {
+  width: 100%;
+}
+
+.promo-block {
+  width: 48.8%;
+  margin-right: 1.75%;
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+.promo-block:last-child {
+  margin-right: 0;
+}
+
+.catalog-item {
+  float: left;
+  width: 23.2%;
+  margin-right: 2.4%;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item figure {
+  width: 100%;
+  max-width: 267px;
+  height: auto;
+}
+
+.catalog-item img {
+  width: 100%;
+  height: auto;
+}
+
+.features {
+  width: 100%;
+  padding: 28px 20px;
+  outline: 1px solid green;
+  outline-offset: -2px;
+}
+
+.features .left-column {
+  width: 48%;
+}
+
+.features .right-column {
+  width: 44%;
+}
+
+.features-icon {
+  float: left;
+}
+
+.features-item p {
+  float: right;
+  width: 82%;
+}
