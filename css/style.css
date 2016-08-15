@@ -108,12 +108,16 @@ h2 {
   float: left;
 }
 
-.cart-noadd {
+.cart-noadd, .cart-add {
+  display: none;
+}
+
+.index-page .cart-noadd {
   display: block;
 }
 
-.cart-add {
-  display: none;
+.inner-page .cart-add {
+  display: block;
 }
 
 .header-contacts {
@@ -246,4 +250,27 @@ h2 {
   width: 22.22%;
   outline: 1px solid red;
   outline-offset: -2px;
+}
+
+.breadcrumbs {
+  margin-top: 27px;
+  margin-bottom: 8px;
+}
+
+.catalog-main-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.catalog-sort {
+  width: 860px;
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+.paginator {
+  float: right;
+  width: 190px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
