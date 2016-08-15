@@ -92,6 +92,10 @@ h2 {
   float: left;
 }
 
+.popup-login {
+  display: none;
+}
+
 .popup-search {
   display: none;
 }
@@ -105,7 +109,7 @@ h2 {
 }
 
 .cart-noadd {
-  display: none;
+  display: block;
 }
 
 .cart-add {
@@ -192,7 +196,14 @@ h2 {
   margin-right: 0;
 }
 
+.main-map {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .map-img {
+  max-width: 1200px;
+  min-width: 900px;
   width: 100%;
   height: auto;
 }
