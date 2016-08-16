@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
   color: #fff;
   font-family: Roboto, Arial, sans-serif;
@@ -7,11 +8,11 @@ body {
   background-color: grey;
 }
 
-.clearfix {
- 	content: "";
- 	display: table;
- 	clear: both;
- }
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
 
 .wrapper {
   max-width: 1160px;
@@ -48,6 +49,9 @@ h2 {
   font-size: 16px;
   line-height: 22px;
 }
+
+/* Стили построения сетки */
+/* Сетка главной страницы */
 
 .main-header {
   width: 100%;
@@ -252,6 +256,8 @@ h2 {
   outline-offset: -2px;
 }
 
+/* Сетка каталога */
+
 .breadcrumbs {
   margin-top: 27px;
   margin-bottom: 8px;
@@ -274,3 +280,5 @@ h2 {
   margin-top: 80px;
   margin-bottom: 30px;
 }
+
+/* popup блоки */
