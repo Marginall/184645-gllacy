@@ -112,6 +112,10 @@ h2 {
   float: left;
 }
 
+.popup-cart {
+  display: none;
+}
+
 .cart-noadd, .cart-add {
   display: none;
 }
