@@ -136,7 +136,6 @@ h2 {
 .main-header {
   position: relative;
   width: 100%;
-  z-index: 20;
 }
 
 .main-page .main-header {
@@ -207,6 +206,7 @@ main .container {
   display: none;
   margin: 0;
   padding: 0;
+  background-color: #fff;
   border-radius: 10px;
   z-index: 30;
 }
@@ -402,6 +402,7 @@ main .container {
   float: left;
   width: 23.2%;
   margin-right: 2.4%;
+  z-index: 50;
 }
 
 .catalog-item:last-child {
@@ -409,6 +410,13 @@ main .container {
 }
 
 .item-hover {
+  position: absolute;
+  display: block;
+  width: 293px;
+  height: 405px;
+}
+
+.item-hover .btn {
   display: none;
 }
 
@@ -772,6 +780,8 @@ main .container {
 }
 
 .catalog-sort {
+  width: 862px;
+  margin-bottom: 40px;
   outline: 1px solid red;
   outline-offset: -2px;
 }
@@ -779,16 +789,17 @@ main .container {
 .sort {
   float: left;
   width: 195px;
-  margin-right: 16px;
+  margin-right: 14px;
 }
 
-.sort-title {
+.sort-title, .check-box-title {
   padding-left: 15px;
 }
 
 .sort select {
   padding: 8px 16px;
   padding-top: 7px;
+  padding-right: 10px;
   background-color: #a9bab0;
   border: none;
   border-radius: 15px;
@@ -796,8 +807,7 @@ main .container {
 
 .sort-range-filter {
   float: left;
-  width: 224px;
-  margin-right: 15px;
+  margin-right: 14px;
 }
 
 .sort-price-controls {
@@ -862,8 +872,9 @@ main .container {
   float: left;
 }
 
-.radio-box-bg {
+.radio-box-bg, .check-box-bg {
   padding: 7px 16px;
+  padding-right: 0;
   background: #abbcb2;
   border-radius: 15px;
 }
@@ -872,15 +883,15 @@ main .container {
   padding-left: 15px;
 }
 
-.radio input {
+.radio input, .checkbox input {
   display: none;
 }
 
-.radio {
+.radio, .checkbox {
   position: relative;
   float: left;
   margin-right: 18px;
-  padding-left: 30px;
+  padding-left: 32px;
   cursor: pointer;
 }
 
@@ -891,14 +902,14 @@ main .container {
   display: block;
   width: 18px;
   height: 18px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 50%;
 }
 
-.radio::after {
+.radio-indicator {
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   content: "";
   display: none;
   width: 10px;
@@ -907,8 +918,58 @@ main .container {
   border-radius: 50%;
 }
 
-qwer:checked ~ .radio::after {
+.radio-check:checked + .radio-indicator {
   display: block;
+}
+
+.sort-row-1 {
+  margin-bottom: 16px;
+}
+
+.check-box {
+  float: left;
+  width: 702px;
+}
+
+.checkbox::before {
+  position: absolute;
+  top: 2px;;
+  left: 0;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.checkbox-indicator::before {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  content: "";
+  display: none;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.checkbox-check:checked + .checkbox-indicator::before {
+  display: block;
+}
+
+.sort-btn {
+  float: right;
+  padding: 5px 28px;
+  vertical-align: bottom;
+  background-color: #a6b7ae;
+  border: 2px solid #fff;
+}
+
+.item-row {
+  margin-bottom: 35px;
 }
 
 .paginator {
