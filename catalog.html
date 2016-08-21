@@ -7,14 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
-  <body class="inner-page">
-    <div class="wrapper">
+  <body>
+    <div class="wrapper inner-page">
       <header class="main-header">
         <div class="container clearfix">
           <div class="main-logo"><a href="index.html"><img src="img/main-logo.svg" width="160" height="66" alt="Лого"></a></div>
           <nav class="main-menu">
             <ul class="clearfix">
-              <li class="menu-item menu-catalog">Каталог
+              <li class="menu-item menu-catalog"><a href="#">Каталог</a>
                 <ul class="catalog-inner-menu">
                   <li>Новинки</li>
                   <li class="inner-menu-item"><a href="#">Сливочное</a></li>
@@ -92,15 +92,16 @@
       <main>
         <div class="container clearfix">
           <div class="breadcrumbs">
-            <a class="breadcrumbs-item" href="index.html">Главная</a>
-            <a class="breadcrumbs-item" href="#">Каталог</a>
+            <a class="breadcrumbs-item" class="breadcrumbs-item" href="index.html">Главная</a>
+            <a class="breadcrumbs-item" class="breadcrumbs-item" href="#">Каталог</a>
             <span>Сливочное</span>
           </div>
           <h1 class="catalog-main-title">Сливочное мороженое</h1>
           <div class="catalog-sort">
             <form action="echo.htmlacademy.ru" method="post">
-              <div class="sort-row-1">
-                <div class="sort-title">Сортировка:
+              <div class="sort-row-1 clearfix">
+                <div class="sort">
+                  <div class="sort-title">Сортировка:</div>
                   <select name="sort">
                       <option value="popular" selected>по популярности</option>
                       <option value="inexpensive">сначала недорогие</option>
@@ -109,8 +110,8 @@
                   </select>
                 </div>
                 <div class="sort-range-filter">
-                  <div class="sort-price-controls">Цена
-                    <div class="controls-min">
+                  <div class="sort-price-controls clearfix">
+                    <div class="controls-min">Цена
                       <input class="min-price" type="text" name="min-price" value="100">руб.
                     </div>
                     <div class="controls-max">-
@@ -121,14 +122,14 @@
                     <div class="filter-scale">
                       <div class="scale-bar"></div>
                     </div>
+                    <div class="sort-toggle sort-min-toggle"></div>
+                    <div class="sort-toggle sort-max-toggle"></div>
                   </div>
-                  <div class="sort-toggle sort-min-toggle"></div>
-                  <div class="sort-toggle sort-max-toggle"></div>
                 </div>
                 <div class="radio-box">
-                  <span class="radio-box-title">Жирность:</span>
-                  <div class="radio-box-bg">
-                    <label class="radio"><input type="radio" name="oil">0%</label>
+                  <div class="radio-box-title">Жирность:</div>
+                  <div class="radio-box-bg clearfix">
+                    <label class="radio"><input class="qwer" type="radio" name="oil">0%</label>
                     <label class="radio"><input type="radio" name="oil" checked>до 10%</label>
                     <label class="radio"><input type="radio" name="oil">до 30%</label>
                     <label class="radio"><input type="radio" name="oil">выше 30%</label>

@@ -8,7 +8,28 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper main-page">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="slide slide-1">
+            <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-2">
+            <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide slide-3">
+            <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="btn" href="#">Давайте оба!</a>
+          </div>
+        </div>
+        <div class="carousel-buttons">
+          <button class="bg-btn active btn-1" type="button"></button>
+          <button class="bg-btn btn-2" type="button"></button>
+          <button class="bg-btn btn-3" type="button"></button>
+        </div>
+      </div>
       <header class="main-header">
         <div class="container clearfix">
           <div class="main-logo"><img src="img/main-logo.svg" width="160" height="66" alt="Лого"></div>
@@ -90,27 +111,6 @@
         </div>
       </header>
       <main>
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="slide slide-1">
-              <h2 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h2>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-            <div class="slide slide-2">
-              <h2 class="slide-title">Шоколадный пломбир и лимонный сорбет</h2>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-            <div class="slide slide-3">
-              <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
-              <a class="btn" href="#">Давайте оба!</a>
-            </div>
-          </div>
-          <div class="carousel-buttons">
-            <button class="bg-btn btn-1" type="button"></button>
-            <button class="bg-btn btn-2" type="button"></button>
-            <button class="bg-btn btn-3" type="button"></button>
-          </div>
-        </div>
         <div class="container">
           <div class="row promo-block-row clearfix">
             <div class="promo-block left">
@@ -126,7 +126,7 @@
                <a class="btn" href="#">Хочу шоколадки!</a>
             </div>
           </div>
-          <div class="row clearfix">
+          <div class="row catalog-row clearfix">
             <div class="catalog-item">
               <div class="item-hover">
                 <a class="btn" href="#">Быстрый просмотр</a>
@@ -136,7 +136,7 @@
                 <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
               </figure>
               <div class="item-decoration"></div>
-              <span class="item-price">310&#8381;/кг</span>
+              <div class="item-price">310&#8381;<span>/кг</span></div>
             </div>
             <div class="catalog-item">
               <div class="item-hover">
@@ -147,7 +147,7 @@
                 <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
               </figure>
               <div class="item-decoration"></div>
-              <span class="item-price">380&#8381;/кг</span>
+              <div class="item-price">380&#8381;<span>/кг</span></div>
             </div>
             <div class="catalog-item">
               <div class="item-hover">
@@ -158,7 +158,7 @@
                 <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
               </figure>
               <div class="item-decoration"></div>
-              <span class="item-price">355&#8381;/кг</span>
+              <div class="item-price">355&#8381;<span>/кг</span></div>
             </div>
             <div class="catalog-item">
               <div class="item-hover">
@@ -169,7 +169,7 @@
                 <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
               </figure>
               <div class="item-decoration"></div>
-              <span class="item-price">415&#8381;/кг</span>
+              <div class="item-price">415&#8381;<span>/кг</span></div>
             </div>
           </div>
           <div class="features">
@@ -204,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="row clearfix">
+          <div class="row news-row clearfix">
             <div class="promo-block-news left">
               <h2 class="promo-news">Новое в нашем блоге</h2>
               <p><a class="news-text" href="#">10  способов сервировки<br>
