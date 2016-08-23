@@ -325,16 +325,15 @@ display: none;
 .user-search {
   position: relative;
   float: left;
-  width: 35px;
-  height: 35px;
+  width: 32px;
   margin-left: 5px;
   margin-right: 10px;
 }
 
 .user-search-button {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: #a0b4a9 url("../img/search-icon.svg") no-repeat 55% 50%;
   border-radius: 50%;
 }
@@ -359,9 +358,10 @@ display: none;
   border-radius: 5px;
 }
 
-.search {
+.search, .login-mail, .login-password {
   width: 281px;
   height: 42px;
+  box-sizing: border-box;
   padding: 0 14px;
   border: 2px solid #d3d3d2;
   border-radius: 5px;
@@ -374,26 +374,60 @@ display: none;
   display: none;
 }
 
-.popup-login {
-  display: none;
-}
-
 .user-login {
   float: left;
+  width: 93px;
   margin-right: 10px;
+}
+
+.user-login-button {
+  position: relative;
+  display: block;
+  padding: 5px 15px;
+  padding-left: 45px;
+  font: inherit;
+  text-decoration: none;
+  color: #fff;
   border-radius: 20px;
   background-color: #a0b4a9;
 }
 
+.user-login-button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 .user-login-button::before {
   position: absolute;
-  top: 8px;
+  display: block;
+  top: 6px;
   left: 17px;
   content: "";
   display: block;
   width: 22px;
   height: 20px;
   background: #9fb4a9 url("../img/login-icon.svg") no-repeat;
+}
+
+.user-login-button:hover::before {
+  background: #fff url("../img/login-icon-hover.svg") no-repeat;
+}
+
+.popup-login {
+  position: absolute;
+  display: block;
+  width: 277px;
+  height: 214px;
+  padding: 20px 17px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  z-index: 40;
+}
+
+.login-mail, .login-password {
+  width: 240px;
+  padding: 14px 13px;
 }
 
 .user-cart {
