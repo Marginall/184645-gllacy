@@ -43,11 +43,16 @@ main .container {
 .btn {
   display: block;
   padding: 12px 40px;
+  font-family: Roboto, Arial, sans-serif;
   color: #fff;
   text-decoration: none;
   background-color: #f06341;
   border: none;
+  outline: none;
   border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f06341;
 }
 
 figure {
@@ -368,6 +373,7 @@ display: none;
   color: #999999;
   font: inherit;
   font-size: 14px;
+  outline: none;
 }
 
 .popup-search .search-submit {
@@ -375,6 +381,7 @@ display: none;
 }
 
 .user-login {
+  position: relative;
   float: left;
   width: 93px;
   margin-right: 10px;
@@ -397,6 +404,11 @@ display: none;
   background-color: #fff;
 }
 
+.user-login-button .active {
+  color: #000;
+  background-color: #323232;
+}
+
 .user-login-button::before {
   position: absolute;
   display: block;
@@ -415,9 +427,10 @@ display: none;
 
 .popup-login {
   position: absolute;
-  display: block;
-  width: 277px;
-  height: 214px;
+  top: 40px;
+  right: 0;
+  display: none;
+  width: 243px;
   padding: 20px 17px;
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -425,9 +438,38 @@ display: none;
   z-index: 40;
 }
 
+.user-login-button:hover + .popup-login,
+.user-login-button:hover + .popup-login {
+  display: block;
+}
+
 .login-mail, .login-password {
   width: 240px;
-  padding: 14px 13px;
+  margin-bottom: 20px;
+  padding: 14px 12px;
+}
+
+.login-navigation .login-btn  {
+  float: left;
+  padding: 11px 24px;
+  color: #fff;
+  font-size: 18px;
+  font-wight: 700;
+}
+
+.login-navigation .col {
+  float: right;
+  width: 119px;
+  padding-right: 5px;
+}
+
+.login-navigation a {
+  display: block;
+  color: #323232;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
 }
 
 .user-cart {
