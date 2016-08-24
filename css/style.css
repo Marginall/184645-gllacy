@@ -1,7 +1,7 @@
 /* Общие стили */
 body {
   color: #fff;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -45,13 +45,13 @@ main .container {
   padding: 12px 40px;
   font-family: Roboto, Arial, sans-serif;
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
-  background-color: #f06341;
+  text-align: center;
   border: none;
   outline: none;
   border-radius: 20px;
-  font-size: 16px;
-  font-weight: 500;
   background-color: #f06341;
 }
 
@@ -542,12 +542,104 @@ display: none;
   position: absolute;
   top: 40px;
   right: 0;
-  display: block;
-  width: 539px;
-  height: 242px;
+  display: none;
+  width: 507px;
+  min-height: 202px;
+  padding: 20px 16px;
+  color: #323232;
+  font-size: 13px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.user-cart-button>.cart-add:hover + .popup-cart {
+  display: block;
+}
+
+.cart-item {
+  margin-bottom: 18px;
+}
+
+.cart-title, .cart-calculation, .total-cart-price {
+  float: left;
+  display: block;
+  padding-top: 7px;
+ }
+
+.item-del {
+  position: relative;
+  float: left;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: 12px;
+  margin-right: 13px;
+  padding: 0;
+  border: none;
+  background-color: #f8f7f4;
+  cursor: pointer;
+}
+
+.item-del::after,
+.item-del::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #7e7d7c;
+}
+
+.item-del::after {
+  left: 1px;
+  width: 13px;
+  transform: rotate(45deg);
+}
+
+.item-del::before {
+  left: 1px;
+  width: 13px;
+  transform: rotate(-45deg);
+}
+
+.cart-img {
+  float: left;
+  display: block;
+  margin-right: 13px;
+  line-height: 0;
+}
+
+.cart-title {
+  width: 220px;
+  margin-right: 33px;
+  text-align: left;
+}
+
+.cart-calculation {
+  margin-right: 27px;
+}
+
+.cart-price {
+  color: #999999;
+}
+
+.total-box {
+  margin-bottom: 12px;
+  padding-top: 13px;
+  border-top: 1px solid #cacac7;
+}
+
+.total {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.popup-cart .cart-btn {
+  float: right;
+  width: 142px;
+  padding: 10px 14px;
+  font-size: 18px;
 }
 
 .header-contacts {
