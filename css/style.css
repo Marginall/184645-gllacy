@@ -104,45 +104,41 @@ input, select {
 /* Сетка главной страницы */
 
 .carousel-wrapper{
-  position: absolute;
-  display: block;
-  z-index: 1;
-}
-
-.carousel-buttons {
-  position: absolute;
-  top: 562px;
-  left: 0;
-  display: block;
-}
-
-.slide {
-  display: block;
-  min-width: 1160px;
+  width: 100%;
   min-height: 881px;
-  margin: 0 auto;
-  padding-top: 1px;
-  text-align: center;
+  margin-bottom: -230px;
+  background: #8ba597 url("../img/slide-bg-1.png") no-repeat center;
   outline: 1px solid red;
   outline-offset: -2px;
 }
 
+.carousel {
+  width: 300%;
+}
+
+.carousel-buttons {
+
+}
+
+.slide {
+  outline: 1px solid green;
+  outline-offset: -2px;
+}
+
 .slide-1 {
-  display: block;
-  background: url("../img/bg-slide-1.png") no-repeat 55% 0px;
+
 }
 
 .slide-2 {
-  display: none;
-  background: url("../img/bg-slide-2.png") no-repeat 55% 0;
+
 }
 
 .slide-3 {
-  display: none;
-  background: url("../img/bg-slide-3.png") no-repeat 55% 0;
+
 }
 
 .slide-title {
+  display: none;
   width: 670px;
   margin: 0 auto;
   margin-top: 392px;
@@ -152,6 +148,7 @@ input, select {
 }
 
 .slide .btn {
+  display: none;
   width: 200px;
   margin: 0 auto;
   padding: 11px 40px;
@@ -175,14 +172,11 @@ input, select {
 .main-header {
   position: relative;
   width: 100%;
+  margin-bottom:-125px;
 }
 
 .main-page .main-header {
   z-index: 30;
-}
-
-.main-page .main-header {
-  margin-bottom: 520px;
 }
 
 .inner-page .main-header {
@@ -261,8 +255,7 @@ input, select {
   z-index: 30;
 }
 
-.menu-item a:hover+.catalog-inner-menu
- {
+.menu-item a:hover+.catalog-inner-menu {
   display: block;
 }
 
@@ -271,7 +264,7 @@ input, select {
   position: relative;
   display: block;
   min-width: 123px;
-  padding-left: 20px;
+  padding: 10px 20px;
   padding-right: 0;
   color: #323232;
   font-size: 14px;
@@ -291,31 +284,6 @@ input, select {
   background-color: #d1d0ce;
 }
 
-.item-border {
-  padding-top: 10px;
-  padding-bottom: 11px;
-}
-
-.inner-menu-item:nth-child(2) a {
-  padding-top: 10px;
-  padding-bottom: 11px;
-}
-
-.inner-menu-item:nth-child(3) a {
-  padding-top: 6px;
-  padding-bottom: 7px;
-}
-
-.inner-menu-item:nth-child(4) a {
-  padding-top: 8px;
-  padding-bottom: 9px;
-}
-
-.inner-menu-item:nth-child(5) a {
-  padding-top: 8px;
-  padding-bottom: 12px;
-}
-
 .inner-menu-item a:hover {
   background-color: #fbded7;
 }
@@ -325,6 +293,7 @@ input, select {
 }
 
 .inner-menu-item .active {
+  color: #fff;
   background-color: #d07058;
 }
 
@@ -1021,7 +990,7 @@ input, select {
   margin-top: 36px;
 }
 
-.social {
+.footer-social .social {
   float: left;
   display: block;
   width: 31px;
@@ -1444,7 +1413,7 @@ input, select {
   position: fixed;
   top: 20%;
   left: 35%;
-  display: block;
+  display: none;
   width: 477px;
   height: 442px;
   padding: 18px 24px;
