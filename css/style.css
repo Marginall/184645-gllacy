@@ -884,6 +884,13 @@ input, select {
   color: #323232;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.news-text:hover {
+  color: #e84d37;
+  border-bottom: 1px solid #f9cdc4;
 }
 
 .promo-block-newslatter {
@@ -1437,7 +1444,7 @@ input, select {
   position: fixed;
   top: 20%;
   left: 35%;
-  display: none;
+  display: block;
   width: 477px;
   height: 442px;
   padding: 18px 24px;
@@ -1447,7 +1454,7 @@ input, select {
 }
 
 .popup-form.show {
-  display: fixed;
+  display: block;
 }
 
 .popup-form form {
@@ -1463,22 +1470,76 @@ input, select {
 }
 
 .popup-name, .popup-mail {
+  position: relative;
   display: block;
-  width: 239px;
+  width: 267px;
   height: 44px;
+  box-sizing: border-box;
+  padding: 14px 14px;
   margin-bottom: 20px;
-  padding: 0 14px;
   color: #323232;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
 }
 
+.popup-name-box,
+.popup-mail-box {
+  position: relative;
+  display: block;
+}
+
+.popup-name-box::after + .popup-name:hover {
+  position: absolute;
+  top: -20px;
+  content: "Как вас зовут?";
+  display: block;
+  width: 150px;
+  padding-left: 15px;
+  color: #5b9ddf;
+  font-size: 11px;
+}
+
+.popup-mail-box::after {
+  position: absolute;
+  top: -20px;
+  content: "Ваша почта для ответа?";
+  display: block;
+  padding-left: 15px;
+  color: #5b9ddf;
+  font-size: 11px;
+}
+
+.popup-name:hover, .popup-mail:hover, .popup-area:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.popup-name:focus, .popup-mail:focus {
+  border-color: #8fbdec;
+}
+
+.popup-name-box + .popup-name:focus,
+.popup-mail-box + .popup-mail:focus {
+  color: #5b9ddf;
+}
+
+.popup-name:focus::-webkit-input-placeholder {color:#fff;}
+.popup-name:focus::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.popup-name:focus:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.popup-name:focus:-ms-input-placeholder      {color:#fff;}
+
+.popup-mail:focus::-webkit-input-placeholder {color:#fff;}
+.popup-mail:focus::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.popup-mail:focus:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.popup-mail:focus:-ms-input-placeholder      {color:#fff;}
+
 .popup-form textarea {
-  width: 400px;
-  height: 121px;
+  width: 428px;
+  height: 155px;
+  box-sizing: border-box;
   margin-bottom: 25px;
   padding: 12px 14px;
+  color: #323232;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
