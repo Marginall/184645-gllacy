@@ -198,6 +198,10 @@ input, select {
   margin-left: -6px;
 }
 
+.main-logo a {
+  border: none;
+}
+
 .main-menu-box {
   position: relative;
   float: left;
@@ -224,6 +228,7 @@ input, select {
   font-size: 16px;
   text-decoration: none;
   line-height: 16px;
+  border: none;
 }
 
 .menu-box-item .menu-item:hover,
@@ -234,17 +239,9 @@ input, select {
   border-radius: 15px;
 }
 
-.menu-box-item .menu-item:active {
-  box-shadow: inset 0 2px 1px #696969;
-}
-
+.menu-box-item .menu-item:active,
 .menu-item.active {
   box-shadow: inset 0 2px 1px #696969;
-}
-
-.menu-box-item .menu-item:hover::after,
-.menu-box-item .menu-item:active::after {
-display: none;
 }
 
 .menu-box-item .menu-item:hover+.catalog-inner-menu,
@@ -264,8 +261,8 @@ display: none;
   z-index: 30;
 }
 
-.menu-item a:hover+.catalog-inner-menu,
-.menu-item a:hover {
+.menu-item a:hover+.catalog-inner-menu
+ {
   display: block;
 }
 
@@ -280,6 +277,7 @@ display: none;
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
+  border: none;
 }
 
 .item-border::after {
@@ -1058,8 +1056,9 @@ display: none;
 }
 
 .footer-menu .left-column {
-  width: 138px;
+  width: 115px;
   padding-left: 22px;
+  padding-right: 20px;
 }
 
 .footer-menu .right-column {
@@ -1068,7 +1067,7 @@ display: none;
 
 .footer-menu-item {
   position: relative;
-  display: block;
+  display: inline;
   color: #fff;
   font-size: 13px;
   line-height: 18px;
@@ -1087,7 +1086,7 @@ display: none;
 
 .footer-copyright {
   float: right;
-  width: 18.4%;
+  width: 16.4%;
   margin-top: 20px;
 }
 
@@ -1097,8 +1096,12 @@ display: none;
 
 .copyright-text {
   color: #fff;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
+}
+
+.copyright-text a {
+  font-size: 12px;
 }
 
 /* Сетка каталога */
@@ -1110,7 +1113,7 @@ display: none;
 
 .breadcrumbs-item {
   position: relative;
-  padding-right: 14px;
+  margin-right: 14px;
   color: #fff;
   font-size: 14px;
   line-height: 16px;
@@ -1120,8 +1123,9 @@ display: none;
 .breadcrumbs-item::after {
   position: absolute;
   top: 1px;
-  right: 1px;
+  right: -12px;
   content: "»";
+  border: none;
 }
 
 .catalog-main-title {
@@ -1414,6 +1418,7 @@ display: none;
   padding: 2px 8px;
   color: #fff;
   text-decoration: none;
+  border: none;
 }
 
 .paginator-item:hover {
