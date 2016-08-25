@@ -74,10 +74,12 @@ a {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+  border-bottom: 1px solid #a9bbb1;
 }
 
 a:hover, a:active {
   color: #ffbc9e;
+  border-color: #a7a294;
 }
 
 figure {
@@ -173,6 +175,9 @@ input, select {
 .main-header {
   position: relative;
   width: 100%;
+}
+
+.main-page .main-header {
   z-index: 30;
 }
 
@@ -219,23 +224,6 @@ input, select {
   font-size: 16px;
   text-decoration: none;
   line-height: 16px;
-}
-
-.menu-box-item .menu-item::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 84%;
-  height: 1px;
-  background-color: #b0c8bb;
-}
-
-.menu-box-item:first-child .menu-item::after {
-  width: 67%;
-}
-
-.menu-box-item:last-child .menu-item::after {
-  width: 77%;
 }
 
 .menu-box-item .menu-item:hover,
@@ -1441,13 +1429,20 @@ display: none;
 }
 
 .popup-form {
-  position: absolute;
-  display: block;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  display: none;
   width: 477px;
   height: 442px;
   padding: 18px 24px;
   background-color: #f8f7f4;
   border-radius: 10px;
+  z-index: 100;
+}
+
+.popup-form.show {
+  display: fixed;
 }
 
 .popup-form form {
@@ -1475,9 +1470,10 @@ display: none;
 }
 
 .popup-form textarea {
-  width: 428px;
-  height: 155px;
+  width: 400px;
+  height: 121px;
   margin-bottom: 25px;
+  padding: 12px 14px;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
@@ -1491,4 +1487,41 @@ display: none;
 
 .popup-form-close {
   position: absolute;
+  top: -40px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #f8f7f4;
+}
+
+.popup-form-close::after,
+.popup-form-close::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #131313;
+}
+
+.popup-form-close::after {
+  top: 1px;
+  transform: rotate(45deg);
+}
+
+.popup-form-close::before {
+  top: 1px;
+  transform: rotate(-45deg);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 50;
 }
