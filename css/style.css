@@ -14,13 +14,16 @@ display: table;
 clear: both;
 }
 
+.inner-page {
+  background: #849d8f url("../img/inner-page-bg.png") no-repeat;
+}
+
 .wrapper {
   position: relative;
   max-width: 1160px;
   min-width: 860px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: #8ba597;
 }
 
 .container {
@@ -103,76 +106,113 @@ input, select {
 /* Стили построения сетки */
 /* Сетка главной страницы */
 
-.carousel-wrapper{
+.slider {
+  position: relative;
   width: 100%;
-  min-height: 881px;
-  margin-bottom: -230px;
-  background: #8ba597 url("../img/slide-bg-1.png") no-repeat center;
-  outline: 1px solid red;
-  outline-offset: -2px;
+  max-width: 1146px;
+  margin-bottom: 45px;
 }
 
-.carousel {
-  width: 300%;
+#btn-1:checked ~ .wrapper {
+  background: #849d8f url("../img/bg-slide-1.png") no-repeat center top;
 }
 
-.carousel-buttons {
-
+#btn-2:checked ~ .wrapper {
+  background: #8996a6 url("../img/bg-slide-2.png") no-repeat center top;
 }
 
-.slide {
-  outline: 1px solid green;
-  outline-offset: -2px;
+#btn-3:checked ~ .wrapper {
+  background: #9d8b84 url("../img/bg-slide-3.png") no-repeat center top;
 }
 
-.slide-1 {
-
+#btn-1:checked ~ .wrapper .btn-1 {
+  background-color: #fff;
 }
 
-.slide-2 {
-
+#btn-2:checked ~ .wrapper .btn-2 {
+  background-color: #fff;
 }
 
-.slide-3 {
+#btn-3:checked ~ .wrapper .btn-3 {
+  background-color: #fff;
+}
 
+#btn-1:checked ~ .wrapper .slider-1 {
+  display: block;
+}
+
+#btn-2:checked ~ .wrapper .slider-2 {
+  display: block;
+}
+
+#btn-3:checked ~ .wrapper .slider-3 {
+  display: block;
+}
+
+.slider-1 {
+  display: none;
+}
+
+.slider-2 {
+  display: none;
+}
+
+.slider-3 {
+  display: none;
 }
 
 .slide-title {
-  display: none;
-  width: 670px;
+  display: block;
+  width: 650px;
   margin: 0 auto;
-  margin-top: 392px;
   margin-bottom: 22px;
   font-size: 60px;
   line-height: 60.35px;
+  font-weight: 700;
+  text-align: center;
 }
 
-.slide .btn {
-  display: none;
+.slider-1 .slide-title {
+  width: 670px;
+}
+
+.slider .btn {
+  display: block;
   width: 200px;
   margin: 0 auto;
   padding: 11px 40px;
   font-size: 32px;
   line-height: 44px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  border-radius: 30px;
+}
+
+.slider-radio {
+  display: none;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 165px;
 }
 
 .bg-btn {
+  float: left;
   width: 18px;
   height: 18px;
   margin-right: 8px;
   border: 2px solid #fff;
-  background-color: #8ba597;
   border-radius: 50%;
-}
-
-.bg-btn.active {
-  background-color: #fff;
+  cursor: pointer;
 }
 
 .main-header {
   position: relative;
   width: 100%;
-  margin-bottom:-125px;
+  margin-bottom: 267px;
 }
 
 .main-page .main-header {
@@ -321,6 +361,7 @@ input, select {
   height: 32px;
   background: #a0b4a9 url("../img/search-icon.svg") no-repeat 55% 50%;
   border-radius: 50%;
+  background-image: url("../img/search-icon.svg") no-repeat 55% 50%;
 }
 
 .user-search-button:hover {
