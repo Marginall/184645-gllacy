@@ -572,6 +572,7 @@ input, select {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  z-index: 50;
 }
 
 .cart-add:hover + .popup-cart {
@@ -777,7 +778,6 @@ input, select {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 50%;
 }
 
 .item-decoration {
@@ -1491,33 +1491,6 @@ input, select {
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
-}
-
-.popup-name-box,
-.popup-mail-box {
-  position: relative;
-  display: block;
-}
-
-.popup-name-box::after + .popup-name:hover {
-  position: absolute;
-  top: -20px;
-  content: "Как вас зовут?";
-  display: block;
-  width: 150px;
-  padding-left: 15px;
-  color: #5b9ddf;
-  font-size: 11px;
-}
-
-.popup-mail-box::after {
-  position: absolute;
-  top: -20px;
-  content: "Ваша почта для ответа?";
-  display: block;
-  padding-left: 15px;
-  color: #5b9ddf;
-  font-size: 11px;
 }
 
 .popup-name:hover, .popup-mail:hover, .popup-area:hover {
