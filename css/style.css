@@ -217,7 +217,7 @@ input, select {
 }
 
 .inner-page .main-header {
-  margin-bottom: -29px;
+  margin-bottom: -22px;
 }
 
 .main-logo {
@@ -381,12 +381,12 @@ input, select {
 
 .user-search-button:hover + .popup-search {
   position: absolute;
-  top: 38px;
+  top: 37px;
   right: 0;
   display: block;
   width: 310px;
-  height: 44px;
-  padding: 20px 15px;
+  height: 49px;
+  padding: 18px 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -397,7 +397,7 @@ input, select {
   width: 281px;
   height: 42px;
   box-sizing: border-box;
-  padding: 0 14px;
+  padding: 0 13px;
   border: 2px solid #d3d3d2;
   border-radius: 5px;
   color: #999999;
@@ -407,7 +407,7 @@ input, select {
 }
 
 .popup-search .search-submit {
-  display: block;
+  display: none;
 }
 
 .user-login {
@@ -533,10 +533,10 @@ input, select {
 
 .cart-add {
   display: none;
-  padding-right: 34px;
-  padding-left: 45px;
+  padding-right: 16px;
+  padding-left: 44px;
   padding-top: 6px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   color: #313131;
   font-size: 14px;
   font-family: Roboto, Arial, sans-serif;
@@ -1160,17 +1160,20 @@ input, select {
 /* Сетка каталога */
 
 .breadcrumbs {
-  margin-bottom: 8px;
   z-index: 5;
 }
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 14px;
+  margin-right: 17px;
   color: #fff;
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
+}
+
+.breadcrumbs span {
+  font-size: 14px;
 }
 
 .breadcrumbs-item::after {
@@ -1183,7 +1186,7 @@ input, select {
 
 .catalog-main-title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: 35px;
   line-height: 41px;
 }
@@ -1200,16 +1203,17 @@ input, select {
 }
 
 .sort-title, .check-box-title {
-  padding-left: 15px;
+  padding-left: 17px;
+  font-size: 14px;
 }
 
 .sort select {
-  padding: 8px 16px;
-  padding-top: 7px;
-  padding-right: 10px;
+  padding: 8px 11px;
+  padding-top: 8px;
+  padding-right: 15px;
   background-color: #a9bab0;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .sort select:hover {
