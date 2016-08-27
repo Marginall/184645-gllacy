@@ -20,10 +20,10 @@ clear: both;
 
 .wrapper {
   position: relative;
-  max-width: 1160px;
+  max-width: 1146px;
   min-width: 860px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 27px;
 }
 
 .container {
@@ -49,13 +49,14 @@ main .container {
   font-family: Roboto, Arial, sans-serif;
   color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
   border: none;
   border-radius: 20px;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   outline: none;
 }
 
@@ -110,7 +111,7 @@ input, select {
   position: relative;
   width: 100%;
   max-width: 1146px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 #btn-1:checked ~ .wrapper {
@@ -165,7 +166,7 @@ input, select {
   display: block;
   width: 650px;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
@@ -177,16 +178,12 @@ input, select {
 }
 
 .slider .btn {
-  display: block;
   width: 200px;
   margin: 0 auto;
   padding: 11px 40px;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   border-radius: 30px;
 }
 
@@ -196,12 +193,12 @@ input, select {
 
 .slider-buttons {
   position: absolute;
-  top: 165px;
+  top: 170px;
 }
 
 .bg-btn {
   float: left;
-  width: 18px;
+  width: 17px;
   height: 18px;
   margin-right: 8px;
   border: 2px solid #fff;
@@ -212,7 +209,7 @@ input, select {
 .main-header {
   position: relative;
   width: 100%;
-  margin-bottom: 267px;
+  margin-bottom: 275px;
 }
 
 .main-page .main-header {
@@ -227,9 +224,9 @@ input, select {
   float: left;
   width: 160px;
   height: 66px;
-  margin-right: 16px;
-  padding-top: 8px;
-  margin-left: -6px;
+  margin-left: -5px;
+  margin-right: 10px;
+  padding-top: 10px;
 }
 
 .main-logo a {
@@ -239,7 +236,7 @@ input, select {
 .main-menu-box {
   position: relative;
   float: left;
-  padding-top: 21px;
+  padding-top: 24px;
 }
 
 .main-menu-box ul {
@@ -251,13 +248,13 @@ input, select {
 .menu-box-item {
   position: relative;
   float: left;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .menu-box-item .menu-item {
   position: relative;
   display: block;
-  padding: 7px 14px;
+  padding: 7px 13px;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -286,7 +283,7 @@ input, select {
 .catalog-inner-menu {
   position: absolute;
   top: 35px;
-  left: -5px;
+  left: -8px;
   display: none;
   margin: 0;
   padding: 0;
@@ -295,17 +292,12 @@ input, select {
   z-index: 30;
 }
 
-.menu-item a:hover+.catalog-inner-menu {
-  display: block;
-}
-
 .inner-menu-item a,
 .item-border {
   position: relative;
   display: block;
-  min-width: 123px;
-  padding: 10px 20px;
-  padding-right: 0;
+  padding: 11px 20px;
+  padding-right: 50px;
   color: #323232;
   font-size: 14px;
   line-height: 16px;
@@ -324,6 +316,23 @@ input, select {
   background-color: #d1d0ce;
 }
 
+.inner-menu-item:nth-child(3) a {
+  padding: 5px 20px;
+  padding-right: 50px;
+}
+
+.inner-menu-item:nth-child(4) a {
+  padding: 10px 20px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+}
+
+.inner-menu-item:nth-child(5) a {
+  padding: 6px 20px;
+  padding-right: 50px;
+  padding-bottom: 13px;
+}
+
 .inner-menu-item a:hover {
   background-color: #fbded7;
 }
@@ -339,20 +348,19 @@ input, select {
 
 .users-container {
   float: right;
-  padding-top: 23px;
+  padding-top: 22px;
   text-align: right;
 }
 
 .user-block {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .user-search {
   position: relative;
   float: left;
   width: 32px;
-  margin-left: 5px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .user-search-button {
@@ -361,7 +369,6 @@ input, select {
   height: 32px;
   background: #a0b4a9 url("../img/search-icon.svg") no-repeat 55% 50%;
   border-radius: 50%;
-  background-image: url("../img/search-icon.svg") no-repeat 55% 50%;
 }
 
 .user-search-button:hover {
@@ -400,22 +407,23 @@ input, select {
 }
 
 .popup-search .search-submit {
-  display: none;
+  display: block;
 }
 
 .user-login {
   position: relative;
   float: left;
   width: 93px;
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .user-login-button {
   position: relative;
   display: block;
-  padding: 5px 15px;
-  padding-left: 45px;
+  padding: 5px 23px;
+  padding-left: 42px;
   font: inherit;
+  font-size: 14px;
   text-decoration: none;
   color: #fff;
   border-radius: 20px;
@@ -434,9 +442,8 @@ input, select {
 
 .user-login-button::before {
   position: absolute;
-  display: block;
   top: 6px;
-  left: 17px;
+  left: 15px;
   content: "";
   display: block;
   width: 22px;
@@ -450,18 +457,17 @@ input, select {
 
 .popup-login {
   position: absolute;
-  top: 40px;
+  top: 37px;
   right: 0;
   display: none;
   width: 243px;
-  padding: 20px 17px;
+  padding: 19px 17px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   z-index: 50;
 }
 
-.user-login-button:hover + .popup-login,
 .user-login-button:hover + .popup-login {
   display: block;
 }
@@ -469,25 +475,28 @@ input, select {
 .login-mail, .login-password {
   width: 240px;
   margin-bottom: 20px;
-  padding: 14px 12px;
+  padding: 20px 12px;
 }
 
 .login-navigation .login-btn  {
   float: left;
-  padding: 11px 24px;
+  padding: 12px 25px;
   color: #fff;
   font-size: 18px;
-  font-wight: 700;
+  font-weight: 700;
 }
 
 .login-navigation .col {
   float: right;
   width: 119px;
+  padding-top: 1px;
   padding-right: 5px;
+  text-align: left;
+  line-height: 20px;
 }
 
 .login-navigation a {
-  display: block;
+  display: inline;
   color: #323232;
   font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
@@ -498,6 +507,7 @@ input, select {
 .user-cart {
   position: relative;
   float: right;
+  font-size: 14px;
 }
 
 .cart-noadd {
@@ -505,7 +515,7 @@ input, select {
   padding-right: 34px;
   padding-left: 45px;
   padding-top: 6px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   border-radius: 20px;
   background-color: #a0b4a9;
 }
@@ -667,6 +677,17 @@ input, select {
 .header-contacts {
   float: right;
   width: 171px;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.header-contacts .tel {
+  display: block;
+  width: 171px;
+  margin-top: 1px;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .wrapper .row {
@@ -674,10 +695,10 @@ input, select {
 }
 
 .promo-block {
-  width: 47.8%;
+  width: 48.8%;
   box-sizing: border-box;
   min-height: 230px;
-  padding: 18px 23px;
+  padding: 15px 19px;
   border-radius: 15px;
 }
 
@@ -695,29 +716,37 @@ input, select {
 
 .promo-title {
   margin: 0;
+  margin-bottom: 15px;
   font-size: 35px;
-  line-height: 41px;
+  line-height: 42px;
 }
 
 .promo-text {
-  margin-bottom: 37px;
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .promo-block .btn {
   float: right;
-  padding: 12px 20px;
+  margin-right: 2px;
+  padding: 11px 22px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .promo-block-row {
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .catalog-item {
   position: relative;
   display: block;
   float: left;
-  width: 23.2%;
-  margin-right: 2.4%;
+  width: 267px;
+  margin-right: 26px;
   padding-top: 6px;
 }
 
@@ -746,8 +775,8 @@ input, select {
 .catalog-item:hover .item-hover-btn {
   display: block;
   width: 170px;
-  margin: 0 auto;
   margin-top: 20px;
+  margin-left: 32px;
   padding: 12px 15px;
   color: #fff;
   font-size: 18px;
@@ -778,6 +807,7 @@ input, select {
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 13px;
 }
 
 .item-decoration {
@@ -800,13 +830,14 @@ input, select {
 
 .item-price {
   position: absolute;
-  top: 220px;
-  left: 0px;
+  top: 226px;
+  left: 1px;
   font-size: 45px;
+  font-weight: 700;
 }
 
 .catalog-item:hover .item-price {
-  left: 13px;
+  left: 14px;
 }
 
 .item-price span {
@@ -814,12 +845,13 @@ input, select {
 }
 
 .catalog-row {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .features {
   margin-bottom: 40px;
-  padding: 1px 18px;
+  padding: 13px 21px;
+  padding-bottom: 14px;
   color: #323232;
   background: #f2e8d3 url("../img/features-bg.jpg");
   border-radius: 15px;
@@ -827,7 +859,7 @@ input, select {
 
 .features-title {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 12px;
   margin-bottom: 10px;
   font-size: 24px;
   line-height: 30px;
@@ -835,7 +867,7 @@ input, select {
 
 .features .left-column,
 .features .right-column {
-  width: 48.3%;
+  width: 48.6%;
 }
 
 .features-icon {
@@ -853,21 +885,17 @@ input, select {
 
 .features-item p {
   float: right;
-  width: 86.4%;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.features-item .features-text {
-  margin-bottom: 20px;
+  width: 89.6%;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 
 .promo-block-newslatter,
 .promo-block-news {
-  width: 47.8%;
+  width: 48.8%;
   box-sizing: border-box;
   min-height: 220px;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-left: 20px;
   color: #323232;
   border-radius: 15px;
@@ -879,8 +907,7 @@ input, select {
 
 .promo-news {
   margin: 0;
-  margin-top: 9px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 16px;
   line-height: 22px;
 }
@@ -895,7 +922,7 @@ input, select {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  border-bottom: 1px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
 }
 
 .news-text:hover {
@@ -905,18 +932,18 @@ input, select {
 
 .promo-block-newslatter {
   margin-right: 0;
-  padding: 37px 27px;
+  padding: 34px 26px;
   background: url("../img/newsletter-bg.jpg") no-repeat;
 }
 
 .newslatter-text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .email-user {
   float: left;
-  width: 236px;
+  width: 338px;
   padding: 12px 14px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -924,6 +951,9 @@ input, select {
 
 .promo-block-newslatter .btn {
   float: right;
+  padding: 11px 18px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .news-row {
@@ -932,13 +962,17 @@ input, select {
 
 .main-map {
   position: relative;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -27px;
+  margin-right: -27px;
+}
+
+.main-map img {
+  display: block;
 }
 
 .main-map::after {
   position: absolute;
-  top: 137px;
+  top: 138px;
   left: 22%;
   content:"";
   display: block;
@@ -968,9 +1002,10 @@ input, select {
 
 .map-information {
   position: absolute;
-  right: 20px;
+  right: 26px;
   top: 62px;
-  padding: 31px 26px;
+  padding: 27px 27px;
+  padding-bottom: 32px;
   color: #323232;
   font-size: 14px;
   background-color: #fff;
@@ -983,60 +1018,58 @@ input, select {
 
 .map-information .common-text {
   width: 160px;
-  margin-bottom: 6px;
 }
 
 .map-information .address {
   width: 222px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 23px;
+  font-weight: 700;
 }
 
 .tel-common-text {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 
-.tel {
+.map-information .tel {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 700;
 }
 
 .map-information .schedule-text {
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .main-map .btn {
-  width: 196px;
   padding: 11px 27px;
   font-size: 18px;
 }
 
 .main-footer {
   width: 100%;
+  padding-bottom: 25px;
   border-top: 1px solid #a9bbb1;
 }
 
 .footer-social {
   float: left;
   width: 22.22%;
-  margin-right: 11%;
-}
-
-.footer-social {
-  margin-top: 36px;
+  margin-top: 34px;
+  margin-right: 12.7%;
 }
 
 .footer-social .social {
   float: left;
   display: block;
   width: 31px;
-  height: 31px;
-  margin-right: 11px;
+  height: 32px;
+  margin-right: 13px;
   border: 3px solid #c2cec7;
   border-radius: 50%;
   opacity: 0.8;
@@ -1058,7 +1091,8 @@ input, select {
   background: url("../img/insta-icon.svg") no-repeat;
 }
 
-.fb {
+.footer-social .fb {
+  margin-right: 11px;
   background: url("../img/fb-icon.svg") no-repeat;
 }
 
@@ -1068,14 +1102,14 @@ input, select {
 
 .footer-menu {
   float: left;
-  width: 28.5%;
-  margin-top: 36px;
+  margin-top: 29px;
+  font-weight: 700;
 }
 
 .footer-menu .left-column {
   width: 115px;
+  margin-right: 27px;
   padding-left: 22px;
-  padding-right: 20px;
 }
 
 .footer-menu .right-column {
@@ -1093,7 +1127,7 @@ input, select {
 .left-column .footer-menu-item:first-child::before {
   position: absolute;
   top: 3px;
-  left: -20px;
+  left: -22px;
   content: "";
   display: block;
   width: 17px;
@@ -1104,7 +1138,7 @@ input, select {
 .footer-copyright {
   float: right;
   width: 16.4%;
-  margin-top: 20px;
+  margin-top: 17px;
 }
 
 .footer-logo {
@@ -1112,6 +1146,8 @@ input, select {
 }
 
 .copyright-text {
+  width: 190px;
+  margin: 0;
   color: #fff;
   font-size: 12px;
   line-height: 18px;
@@ -1451,12 +1487,11 @@ input, select {
 }
 
 .popup-form {
-  position: fixed;
-  top: 20%;
-  left: 35%;
+  position: absolute;
+  top: 338px;
+  left: 683px;
   display: none;
-  width: 477px;
-  height: 442px;
+  width: 431px;
   padding: 18px 24px;
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1483,7 +1518,7 @@ input, select {
   position: relative;
   display: block;
   width: 267px;
-  height: 44px;
+  height: 43px;
   box-sizing: border-box;
   padding: 14px 14px;
   margin-bottom: 20px;
@@ -1520,8 +1555,8 @@ input, select {
   width: 428px;
   height: 155px;
   box-sizing: border-box;
-  margin-bottom: 25px;
-  padding: 12px 14px;
+  margin-bottom: 20px;
+  padding: 10px 14px;
   color: #323232;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1530,6 +1565,7 @@ input, select {
 
 .popup-btn {
   float: right;
+  margin-bottom: 10px;
   padding: 11px 24px;
   font-size: 18px;
 }
