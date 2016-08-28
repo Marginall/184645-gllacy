@@ -571,14 +571,14 @@ input, select {
 
 .popup-cart {
   position: absolute;
-  top: 40px;
+  top: 37px;
   right: 0;
   display: none;
   width: 507px;
-  min-height: 202px;
-  padding: 20px 16px;
+  padding: 23px 17px;
   color: #323232;
   font-size: 13px;
+  line-height: 16px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -590,23 +590,24 @@ input, select {
 }
 
 .cart-item {
-  margin-bottom: 18px;
+  margin-bottom: 23px;
 }
 
 .cart-title, .cart-calculation, .total-cart-price {
   float: left;
   display: block;
-  padding-top: 7px;
+  padding-top: 6px;
  }
 
 .item-del {
   position: relative;
+  left: -1px;
   float: left;
   display: block;
   width: 10px;
   height: 10px;
-  margin-top: 12px;
-  margin-right: 13px;
+  margin-top: 7px;
+  margin-right: 15px;
   padding: 0;
   border: none;
   background-color: #f8f7f4;
@@ -637,18 +638,19 @@ input, select {
 .cart-img {
   float: left;
   display: block;
-  margin-right: 13px;
+  margin-top: -3px;
+  margin-right: 14px;
   line-height: 0;
 }
 
 .cart-title {
   width: 220px;
-  margin-right: 33px;
+  margin-right: 26px;
   text-align: left;
 }
 
 .cart-calculation {
-  margin-right: 27px;
+  margin-right: 29px;
 }
 
 .cart-price {
@@ -656,12 +658,20 @@ input, select {
 }
 
 .total-box {
-  margin-bottom: 12px;
-  padding-top: 13px;
+  margin-top: -7px;
+  margin-bottom: 16px;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 700;
   border-top: 1px solid #cacac7;
 }
 
+.total-text {
+  display: inline-block;
+}
+
 .total {
+  display: inline-block;
   color: #000;
   font-size: 15px;
   font-weight: 700;
@@ -670,7 +680,7 @@ input, select {
 .popup-cart .cart-btn {
   float: right;
   width: 142px;
-  padding: 10px 14px;
+  padding: 13px 12px;
   font-size: 18px;
 }
 
@@ -741,6 +751,10 @@ input, select {
   margin-bottom: 33px;
 }
 
+.item-row {
+  margin-bottom: 32px;
+}
+
 .catalog-item {
   position: relative;
   display: block;
@@ -754,7 +768,7 @@ input, select {
   position: absolute;
   display: block;
   width: 280px;
-  height: 405px;
+  height: 399px;
   margin-top: -6px;
   margin-left: -13px;
   padding-top: 6px;
@@ -775,9 +789,9 @@ input, select {
 .catalog-item:hover .item-hover-btn {
   display: block;
   width: 170px;
-  margin-top: 20px;
-  margin-left: 32px;
-  padding: 12px 15px;
+  margin-top: 84px;
+  margin-left: 31px;
+  padding: 10px 16px;
   color: #fff;
   font-size: 18px;
   line-height: 24px;
@@ -1060,7 +1074,7 @@ input, select {
 .footer-social {
   float: left;
   width: 22.22%;
-  margin-top: 34px;
+  margin-top: 35px;
   margin-right: 12.7%;
 }
 
@@ -1186,14 +1200,14 @@ input, select {
 
 .catalog-main-title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .catalog-sort {
   width: 862px;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 }
 
 .sort {
@@ -1202,8 +1216,14 @@ input, select {
   margin-right: 14px;
 }
 
-.sort-title, .check-box-title {
+.sort-title {
   padding-left: 17px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.sort-title {
+  margin-bottom: 5px;
   font-size: 14px;
 }
 
@@ -1224,9 +1244,12 @@ input, select {
 .sort-range-filter {
   float: left;
   margin-right: 14px;
+  font-size: 14px;
 }
 
 .sort-price-controls {
+  margin-top: -3px;
+  margin-bottom: 4px;
   padding-left: 15px;
 }
 
@@ -1234,19 +1257,32 @@ input, select {
   float: left;
 }
 
+.controls-min {
+  margin-right: 10px;
+}
+
 .min-price, .max-price {
   width: 30px;
-  margin-right: 5px;
+  font-size: 14px;
   background-color: #97aca1;
   border: none;
   outline: none;
+}
+
+.min-price {
+  margin-left: 4px;
+  margin-right: -3px;
+}
+
+.max-price {
+  margin-right: -3px;
 }
 
 .filter-controls {
   position: relative;
   width: 186px;
   height: 4px;
-  padding: 16px 16px;
+  padding: 15px 16px;
   background: #abbcb2;
   border-radius: 15px;
 }
@@ -1260,8 +1296,8 @@ input, select {
 
 .scale-bar {
   position: absolute;
-  left: 10%;
-  width: 148px;
+  left: 14%;
+  width: 100px;
   height: 4px;
   background: #f8f7f4;
 }
@@ -1278,32 +1314,35 @@ input, select {
 }
 
 .sort-min-toggle {
-  left: 22px;
+  left: 34px;
 }
 
 .sort-max-toggle {
-  left: 170px;
+  left: 132px;
 }
 
 .radio-box {
   float: left;
 }
 
-.radio-box-bg, .check-box-bg {
-  padding: 7px 15px;
+.radio-box-bg {
+  padding: 6px 15px;
   background: #abbcb2;
   border-radius: 20px;
 }
 
 .radio-box-title {
-  padding-left: 15px;
+  margin-top: -4px;
+  margin-bottom: 5px;
+  padding-left: 17px;
+  font-size: 14px;
 }
 
 .radio input, .checkbox input {
   display: none;
 }
 
-.radio, .checkbox {
+.radio {
   position: relative;
   float: left;
   margin-right: 18px;
@@ -1318,7 +1357,7 @@ input, select {
 
 .radio::before {
   position: absolute;
-  left: 0;
+  left: 2px;
   content: "";
   display: block;
   width: 20px;
@@ -1331,7 +1370,7 @@ input, select {
 .radio-indicator {
   position: absolute;
   top: 5px;
-  left: 5px;
+  left: 7px;
   content: "";
   display: none;
   width: 10px;
@@ -1348,15 +1387,36 @@ input, select {
   margin-bottom: 16px;
 }
 
+.check-box-title {
+  margin-bottom: 7px;
+  padding-left: 17px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.check-box-bg {
+  padding: 6px 15px;
+  background: #abbcb2;
+  border-radius: 20px;
+}
+
 .check-box {
   float: left;
   width: 702px;
 }
 
+.checkbox {
+  position: relative;
+  float: left;
+  margin-right: 24px;
+  padding-left: 31px;
+  cursor: pointer;
+}
+
 .checkbox::before {
   position: absolute;
-  top: 2px;;
-  left: 0;
+  top: 1px;;
+  left: -1px;
   content: "";
   display: block;
   width: 20px;
@@ -1368,8 +1428,8 @@ input, select {
 
 .checkbox-indicator::before {
   position: absolute;
-  top: 8px;
-  left: 6px;
+  top: 7px;
+  left: 5px;
   content: "";
   display: none;
   width: 8px;
@@ -1404,7 +1464,7 @@ input, select {
 
 .catalog-sort .sort-btn {
   float: right;
-  width: 144px;
+  width: 145px;
   height: 36px;
   box-sizing: border-box;
   padding: 5px 25px;
@@ -1426,15 +1486,11 @@ input, select {
   box-shadow: inset 0 2px 1px #6c6d6c;
 }
 
-.item-row {
-  margin-bottom: 35px;
-}
-
 .paginator {
   float: right;
-  width: 180px;
-  margin-top: 80px;
-  margin-bottom: 29px;
+  width: 187px;
+  margin-top: 49px;
+  margin-bottom: 30px;
 }
 
 .arrow {
@@ -1446,7 +1502,7 @@ input, select {
 }
 
 .arrow-left {
-  margin-right: 14px;
+  margin-right: 13px;
   border-right: 2px solid #9db1a5;
   border-bottom: 2px solid #9db1a5;
   transform: rotate(135deg);
@@ -1472,7 +1528,7 @@ input, select {
 .paginator-item {
   float: left;
   display: block;
-  padding: 2px 8px;
+  padding: 2px 10px;
   color: #fff;
   text-decoration: none;
   border: none;
