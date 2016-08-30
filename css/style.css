@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  background-color: #282828;
+  background-color: grey;
 }
 
 .clearfix:after {
@@ -16,6 +16,11 @@ clear: both;
 
 .inner-page {
   background: #849d8f url("../img/inner-page-bg.png") no-repeat;
+}
+
+.wrapper-outer {
+  position: relative;
+  width: 100%;
 }
 
 .wrapper {
@@ -114,39 +119,51 @@ input, select {
   margin-bottom: 40px;
 }
 
-#btn-1:checked ~ .wrapper {
+#btn-1:checked ~ .wrapper-outer {
+  background: #849d8f;
+}
+
+#btn-2:checked ~ .wrapper-outer {
+  background: #8996a6;
+}
+
+#btn-3:checked ~ .wrapper-outer {
+  background: #9d8b84;
+}
+
+#btn-1:checked ~ .wrapper-outer {
   background: #849d8f url("../img/bg-slide-1.png") no-repeat center top;
 }
 
-#btn-2:checked ~ .wrapper {
+#btn-2:checked ~ .wrapper-outer {
   background: #8996a6 url("../img/bg-slide-2.png") no-repeat center top;
 }
 
-#btn-3:checked ~ .wrapper {
+#btn-3:checked ~ .wrapper-outer {
   background: #9d8b84 url("../img/bg-slide-3.png") no-repeat center top;
 }
 
-#btn-1:checked ~ .wrapper .btn-1 {
+#btn-1:checked ~ .wrapper-outer .btn-1 {
   background-color: #fff;
 }
 
-#btn-2:checked ~ .wrapper .btn-2 {
+#btn-2:checked ~ .wrapper-outer .btn-2 {
   background-color: #fff;
 }
 
-#btn-3:checked ~ .wrapper .btn-3 {
+#btn-3:checked ~ .wrapper-outer .btn-3 {
   background-color: #fff;
 }
 
-#btn-1:checked ~ .wrapper .slider-1 {
+#btn-1:checked ~ .wrapper-outer .slider-1 {
   display: block;
 }
 
-#btn-2:checked ~ .wrapper .slider-2 {
+#btn-2:checked ~ .wrapper-outer .slider-2 {
   display: block;
 }
 
-#btn-3:checked ~ .wrapper .slider-3 {
+#btn-3:checked ~ .wrapper-outer .slider-3 {
   display: block;
 }
 
@@ -262,6 +279,13 @@ input, select {
   border: none;
 }
 
+.menu-catalog .menu-item {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d07058;
+  border-radius: 15px;
+}
+
 .menu-box-item .menu-item:hover,
 .menu-box-item .menu-item:active {
   color: #000;
@@ -275,7 +299,6 @@ input, select {
   box-shadow: inset 0 2px 1px #696969;
 }
 
-.menu-box-item .menu-item:hover+.catalog-inner-menu,
 .menu-box-item .menu-item:hover+.catalog-inner-menu {
   display: block;
 }
@@ -367,8 +390,9 @@ input, select {
   display: block;
   width: 32px;
   height: 32px;
-  background: #a0b4a9 url("../img/search-icon.svg") no-repeat 55% 50%;
+  background: url("../img/search-icon.svg") no-repeat 55% 50%;
   border-radius: 50%;
+  border: none;
 }
 
 .user-search-button:hover {
@@ -379,9 +403,12 @@ input, select {
   display: none;
 }
 
-.user-search-button:hover + .popup-search {
+.popup-wrapper {
+  padding-top: 5px;
+}
+
+.user-search-button:hover ~ .popup-wrapper .popup-search {
   position: absolute;
-  top: 37px;
   right: 0;
   display: block;
   width: 310px;
@@ -426,8 +453,8 @@ input, select {
   font-size: 14px;
   text-decoration: none;
   color: #fff;
+  border: none;
   border-radius: 20px;
-  background-color: #a0b4a9;
 }
 
 .user-login-button:hover {
@@ -448,7 +475,7 @@ input, select {
   display: block;
   width: 22px;
   height: 20px;
-  background: #9fb4a9 url("../img/login-icon.svg") no-repeat;
+  background: url("../img/login-icon.svg") no-repeat;
 }
 
 .user-login-button:hover::before {
@@ -517,7 +544,6 @@ input, select {
   padding-top: 6px;
   padding-bottom: 5px;
   border-radius: 20px;
-  background-color: #a0b4a9;
 }
 
 .cart-noadd::before {
@@ -528,7 +554,7 @@ input, select {
   display: block;
   width: 23px;
   height: 22px;
-  background: #9fb4a9 url("../img/cart-icon.svg") no-repeat;
+  background: url("../img/cart-icon.svg") no-repeat;
 }
 
 .cart-add {
@@ -709,7 +735,7 @@ input, select {
   box-sizing: border-box;
   min-height: 230px;
   padding: 14px 19px;
-  border-radius: 15px;
+  border-radius: 18px;
 }
 
 .promo-block.left {
@@ -855,6 +881,7 @@ input, select {
   left: 1px;
   font-size: 45px;
   font-weight: 700;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   z-index: 40;
 }
 
@@ -984,24 +1011,11 @@ input, select {
 .main-map {
   position: relative;
   width: 100%;
-}
-
-.main-map img {
-  display: block;
-  width: 100%;
   max-width: 1200px;
+  height: 430px;
   min-width: 900px;
-}
-
-.main-map::after {
-  position: absolute;
-  top: 138px;
-  left: 22%;
-  content:"";
-  display: block;
-  min-width: 80px;
-  min-height: 140px;
-  background: url("../img/pin.svg") no-repeat;
+  background: #ede6c9 url("../img/map.jpg") no-repeat;
+  background-size: cover;
 }
 
 .main-map::before {
