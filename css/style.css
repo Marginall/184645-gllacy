@@ -20,14 +20,14 @@ clear: both;
 
 .wrapper {
   position: relative;
-  max-width: 1146px;
-  min-width: 860px;
+  max-width: 1200px;
+  min-width: 900px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 .container {
-  width: 100%;
+  width: 95.4%;
+  padding: 0 2.3%;
 }
 
 main .container {
@@ -705,10 +705,10 @@ input, select {
 }
 
 .promo-block {
-  width: 48.8%;
+  width: 48.95%;
   box-sizing: border-box;
   min-height: 230px;
-  padding: 15px 19px;
+  padding: 14px 19px;
   border-radius: 15px;
 }
 
@@ -759,20 +759,20 @@ input, select {
   position: relative;
   display: block;
   float: left;
-  width: 267px;
-  margin-right: 26px;
+  width: 23.33%;
+  margin-right: 2.22%;
   padding-top: 6px;
 }
 
 .catalog-item:hover .item-hover {
   position: absolute;
   display: block;
-  width: 280px;
-  height: 399px;
+  width: 100%;
   margin-top: -6px;
-  margin-left: -13px;
+  margin-left: -5%;
   padding-top: 6px;
-  padding-left: 13px;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: rgba(173,189,179,0.8);
   border-radius: 5px;
   z-index: 30;
@@ -787,6 +787,7 @@ input, select {
 }
 
 .catalog-item:hover .item-hover-btn {
+  position: absolute;
   display: block;
   width: 170px;
   margin-top: 8px;
@@ -802,9 +803,7 @@ input, select {
 }
 
 .catalog-item figure {
-  width: 100%;
   max-width: 267px;
-  height: auto;
   text-align: center;
 }
 
@@ -826,6 +825,7 @@ input, select {
 
 .item-decoration {
   position: absolute;
+  display: block;
   top: 6px;
   left: 0px;
   width: 61px;
@@ -844,20 +844,21 @@ input, select {
 
 .item-price {
   position: absolute;
-  top: 226px;
-  left: 1px;
+  top: 67.3%;
+  left: 2px;
   font-size: 45px;
   font-weight: 700;
+  z-index: 40;
 }
 
 .catalog-item:hover .item-price {
-  left: 14px;
+  top: 55.6%;
+  left: 5.3%;
 }
 
 .item-price span {
   font-size: 30px;
 }
-
 .catalog-row {
   margin-bottom: 37px;
 }
@@ -957,7 +958,7 @@ input, select {
 
 .email-user {
   float: left;
-  width: 338px;
+  width: 67%;
   padding: 12px 14px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -976,12 +977,14 @@ input, select {
 
 .main-map {
   position: relative;
-  margin-left: -27px;
-  margin-right: -27px;
+  width: 100%;
 }
 
 .main-map img {
   display: block;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 900px;
 }
 
 .main-map::after {
@@ -1073,9 +1076,9 @@ input, select {
 
 .footer-social {
   float: left;
-  width: 22.22%;
+  width: 23.22%;
   margin-top: 35px;
-  margin-right: 12.7%;
+  margin-right: 11.7%;
 }
 
 .footer-social .social {
@@ -1669,4 +1672,33 @@ input, select {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
   z-index: 50;
+}
+
+@media screen and (max-width: 901px)  {
+  .promo-text { margin-bottom: 21px;}
+  .catalog-sort { margin-bottom: 32px;}
+  .catalog-item .item-price { top: 46.64%;}
+  .catalog-item:hover .item-price {
+    top: 43.6%;
+    left: 5.3%;
+  }
+  .catalog-item:hover .item-hover-btn {
+    margin-top: 14px;
+    margin-left: 4px;
+    padding: 10px 11px;
+  }
+  .item-row { margin-bottom: 31px;}
+  .footer-social { margin-right: 6.6%;}
+  .footer-copyright {
+    margin-top: 19px;
+    width: 22%;
+  }
+  .features-item p {
+    width: 86.6%;
+    margin-top: 11px;
+  }
+  .right-column .features-item:last-child { margin-top: 22px;}
+  .left-column .features-text { margin-top: 11px;}
+  .newslatter-text { margin-bottom: 13px;}
+  .email-user { width: 54%;}
 }
