@@ -760,6 +760,8 @@ input, select {
   display: block;
   float: left;
   width: 23.33%;
+  max-height: 330px;
+  min-height: 280px;
   margin-right: 2.22%;
   padding-top: 6px;
 }
@@ -768,6 +770,7 @@ input, select {
   position: absolute;
   display: block;
   width: 100%;
+  min-height: 140%;
   margin-top: -6px;
   margin-left: -5%;
   padding-top: 6px;
@@ -1502,6 +1505,7 @@ input, select {
   width: 7px;
   height: 7px;
   margin-top: 8px;
+  border: none;
 }
 
 .arrow-left {
@@ -1677,7 +1681,9 @@ input, select {
 @media screen and (max-width: 901px)  {
   .promo-text { margin-bottom: 21px;}
   .catalog-sort { margin-bottom: 32px;}
+  .catalog-item { }
   .catalog-item .item-price { top: 46.64%;}
+  .catalog-item:hover .item-hover { min-height: 123%;}
   .catalog-item:hover .item-price {
     top: 43.6%;
     left: 5.3%;
