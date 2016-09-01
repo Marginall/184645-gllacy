@@ -375,7 +375,7 @@ input, select {
   background-color: #f6b5a5;
 }
 
-.inner-menu-item .active {
+.inner-item.active {
   color: #fff;
   background-color: #d07058;
 }
