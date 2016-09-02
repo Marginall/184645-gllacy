@@ -19,6 +19,20 @@ clear: both;
   width: 100%;
 }
 
+.wrapper-outer:before,
+.wrapper-outer:after {
+  content: "";
+  visibility: hidden;
+}
+
+.wrapper-outer:before {
+  background-image: url("bg-slide-2");
+}
+
+.wrapper-outer:after {
+  background-image: url("bg-slide-3");
+}
+
 .wrapper-outer.inner-page {
   background: #849d8f url("../img/inner-page-bg.png") repeat-x;
 }
@@ -1589,8 +1603,70 @@ input, select {
   z-index: 100;
 }
 
+@-webkit-keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
 .popup-form-show {
   display: block;
+  animation: bounceInUp 0.6s;
 }
 
 .popup-form form {
@@ -1713,7 +1789,11 @@ input, select {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.5);
-  z-index: 50;
+  z-index: 90;
+}
+
+.modal-overlay-show {
+  display: block;
 }
 
 @media screen and (max-width: 901px)  {
@@ -1747,8 +1827,4 @@ input, select {
   .left-column .features-text { margin-top: 11px;}
   .newslatter-text { margin-bottom: 13px;}
   .email-user { width: 54%;}
-}
-
-.item-top-container {
-  position: relative;
 }
