@@ -1578,9 +1578,9 @@ input, select {
 }
 
 .popup-form {
-  position: absolute;
-  top: 338px;
-  left: 683px;
+  position: fixed;
+  top: 190px;
+  left: 30%;;
   display: none;
   width: 431px;
   padding: 18px 24px;
@@ -1589,7 +1589,7 @@ input, select {
   z-index: 100;
 }
 
-.popup-form.show {
+.popup-form-show {
   display: block;
 }
 
@@ -1682,6 +1682,7 @@ input, select {
   height: 20px;
   border: none;
   background-color: #f8f7f4;
+  outline: none;
 }
 
 .popup-form-close::after,
