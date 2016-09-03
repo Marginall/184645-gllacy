@@ -73,6 +73,7 @@ main .container {
   text-align: center;
   border: none;
   border-radius: 20px;
+  background-image: -webkit-linear-gradient(bottom, #e74a35 0%, #f26843 100%);
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -81,6 +82,7 @@ main .container {
 
 .btn:hover {
   color: #fff;
+  background-image: -webkit-linear-gradient(bottom, #ec6e5d 0%, #f58669 100%);
   background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
   box-shadow: 0 2px 2px #ac1000;
 }
@@ -673,13 +675,15 @@ input, select {
 .item-del::after {
   left: 1px;
   width: 13px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .item-del::before {
   left: 1px;
   width: 13px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .cart-img {
@@ -1480,7 +1484,8 @@ input, select {
   height: 4px;
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .checkbox-check:checked + .checkbox-indicator::before {
@@ -1550,14 +1555,16 @@ input, select {
   margin-right: 13px;
   border-right: 2px solid #9db1a5;
   border-bottom: 2px solid #9db1a5;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .arrow-right {
   margin-left: 14px;
   border-left: 2px solid #fff;
   border-top: 2px solid #fff;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .paginator .active {
@@ -1666,7 +1673,8 @@ input, select {
 
 .popup-form-show {
   display: block;
-  animation: bounceInUp 0.6s;
+  -webkit-animation: bounceInUp 0.6s;
+          animation: bounceInUp 0.6s;
 }
 
 .popup-form form {
@@ -1695,12 +1703,9 @@ input, select {
   border-radius: 5px;
 }
 
-.popup-name:hover, .popup-mail:hover, .popup-area:hover {
+.popup-name:hover, .popup-mail:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
-}
-
-.popup-name:focus, .popup-mail:focus {
-  border-color: #8fbdec;
+  padding: 13px 13px;
 }
 
 .popup-name:focus::-webkit-input-placeholder {color:#fff;}
@@ -1743,6 +1748,11 @@ input, select {
   border-radius: 5px;
 }
 
+.popup-area:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  padding: 9px 13px;
+}
+
 .popup-btn {
   float: right;
   margin-bottom: 10px;
@@ -1773,12 +1783,14 @@ input, select {
 
 .popup-form-close::after {
   top: 1px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .popup-form-close::before {
   top: 1px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-overlay {
