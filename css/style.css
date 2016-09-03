@@ -125,8 +125,6 @@ h2 {
 input, select {
   outline: none;
 }
-/* Стили построения сетки */
-/* Сетка главной страницы */
 
 .slider {
   position: relative;
@@ -472,10 +470,10 @@ input, select {
   display: block;
   padding: 5px 23px;
   padding-left: 42px;
+  color: #fff;
   font: inherit;
   font-size: 14px;
   text-decoration: none;
-  color: #fff;
   border: none;
   border-radius: 20px;
 }
@@ -559,7 +557,7 @@ input, select {
   font-size: 14px;
 }
 
-.cart-noadd {
+.cart-empty {
   display: block;
   padding-right: 34px;
   padding-left: 45px;
@@ -568,7 +566,7 @@ input, select {
   border-radius: 20px;
 }
 
-.cart-noadd::before {
+.cart-empty::before {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -579,7 +577,7 @@ input, select {
   background: url("../img/cart-icon.svg") no-repeat;
 }
 
-.cart-add {
+.cart-full {
   display: none;
   padding-right: 16px;
   padding-left: 44px;
@@ -595,7 +593,7 @@ input, select {
   cursor: pointer;
 }
 
-.cart-add::before {
+.cart-full::before {
   position: absolute;
   top: 8px;
   left: 16px;
@@ -606,11 +604,11 @@ input, select {
   background: #fff url("../img/cart-full.png") no-repeat;
 }
 
-.inner-page .cart-noadd {
+.inner-page .cart-empty {
   display: none;
 }
 
-.inner-page .cart-add {
+.inner-page .cart-full {
   display: block;
 }
 
@@ -1219,8 +1217,6 @@ input, select {
   font-size: 12px;
 }
 
-/* Сетка каталога */
-
 .breadcrumbs {
   z-index: 5;
 }
@@ -1497,18 +1493,8 @@ input, select {
   border: 2px solid #fff;
 }
 
-
-
-
-/* Тут сильно запутался! */
-
-
-
-.radio-check:disabled ~ .radio::before,
-.checkbox-check:disabled ~ .checkbox::before,
-.radio .disabled,
-.checkbox .disabled {
-  opacity: 0.4;
+.checkbox .checkbox-check:disabled {
+  color: #b2c1b6;
 }
 
 .catalog-sort .sort-btn {
