@@ -233,17 +233,19 @@
               </div>
             </div>
           </div>
-          <div class="main-map">
-            <div class="map-information">
-              <p class="common-text">Адрес главного офиса и офлайн магазина:</p>
-              <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-              <span class="tel-common-text">Для заказов по телефону:</span>
-              <span class="tel">8 812 450-25-25</span>
-              <span class="schedule-text">(с 10 до 20 ежедневно)</span>
-              <a class="btn map-btn" href="#">Форма обратной связи</a>
-            </div>
-          </div>
         </main>
+      </div>
+      <div class="main-map">
+        <div class="map-information">
+          <p class="common-text">Адрес главного офиса и офлайн магазина:</p>
+          <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <span class="tel-common-text">Для заказов по телефону:</span>
+          <span class="tel">8 812 450-25-25</span>
+          <span class="schedule-text">(с 10 до 20 ежедневно)</span>
+          <a class="btn map-btn" href="#">Форма обратной связи</a>
+        </div>
+      </div>
+      <div class="wrapper">
         <footer class="main-footer">
           <div class="container clearfix">
             <div class="footer-social clearfix">
@@ -273,14 +275,14 @@
         <h2 class="popup-form-title">Мы обязательно вам ответим!</h2>
         <form class="clearfix" action="echo.htmlacademy.ru" method="post">
           <div class="form-wrapper">
-            <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Как вас зовут?">
+            <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Как вас зовут?" required>
             <span class="input-name">Как вас зовут?</span>
           </div>
           <div class="form-wrapper">
-            <input class="popup-mail" id="popup-mail" type="text" name="mail" placeholder="Ваша почта для ответа?">
+            <input class="popup-mail" id="popup-mail" type="text" name="mail" placeholder="Ваша почта для ответа?" required>
             <span class="input-name">Ваша почта для ответа?</span>
           </div>
-          <textarea class="popup-area" placeholder="Напишите что-нибудь.."></textarea>
+          <textarea class="popup-area" placeholder="Напишите что-нибудь.." required></textarea>
           <button class="popup-btn btn" type="submit">Отправить</button>
           <button class="popup-form-close" type="button"></button>
         </form>
