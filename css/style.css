@@ -1395,19 +1395,7 @@ input, select {
   margin-right: 0;
 }
 
-.radio::before {
-  position: absolute;
-  left: 2px;
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.radio-indicator {
+.radio-indicator::after {
   position: absolute;
   top: 5px;
   left: 7px;
@@ -1419,7 +1407,20 @@ input, select {
   border-radius: 50%;
 }
 
-.radio-check:checked + .radio-indicator {
+
+.radio-indicator::before {
+  position: absolute;
+  left: 2px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.radio-check:checked + .radio-indicator::after {
   display: block;
 }
 
@@ -1453,7 +1454,7 @@ input, select {
   cursor: pointer;
 }
 
-.checkbox::before {
+.checkbox-indicator::after {
   position: absolute;
   top: 1px;;
   left: -1px;
@@ -1484,8 +1485,8 @@ input, select {
   display: block;
 }
 
-.radio:hover::before,
-.checkbox:hover::before {
+.radio:hover .radio-indicator::before,
+.checkbox:hover .checkbox-indicator::after {
   border: 2px solid #fff;
 }
 
@@ -1493,22 +1494,16 @@ input, select {
   border: 1px solid #fff;
 }
 
-.checkbox .checkbox-check:disabled {
-  opacity: 0.8;
-}
-
+.radio-check:disabled + .radio-indicator::after,
+.radio-check:disabled + .radio-indicator::before,
+.checkbox-check:disabled + .checkbox-indicator::after,
 .checkbox-check:disabled + .checkbox-indicator::before {
-  border-left: 2px solid red;
-  border-bottom: 2px solid red;
+  border-color: #f8f7f4;
+  opacity: 0.4;
 }
 
-.radio::before .radio-check:disabled {
- display: none;
-}
-
-.radio-check:disabled + .radio-indicator::before {
- border-left: 2px solid red;
- border-bottom: 2px solid red;
+.radio-check:disabled + .radio-indicator::after {
+  background-color: #f8f7f4;
 }
 
 .catalog-sort .sort-btn {
