@@ -827,12 +827,12 @@ input, select {
   position: absolute;
   display: block;
   width: 100%;
-  min-height: 140%;
   margin-top: -6px;
   margin-left: -5%;
   padding-top: 6px;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 75px;
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -1802,7 +1802,6 @@ input, select {
   .catalog-sort { margin-bottom: 32px;}
   .catalog-item { }
   .catalog-item .item-price { top: 158px;}
-  .catalog-item:hover .item-hover { min-height: 123%;}
   .catalog-item:hover .item-price {
     top: 159px;
   }
