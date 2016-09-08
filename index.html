@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
   </head>
   <body>
     <input class="slider-radio" type="radio" id="btn-1" name="toggle" checked>
@@ -16,7 +16,7 @@
       <div class="wrapper main-page">
         <header class="main-header">
           <div class="container clearfix">
-            <div class="main-logo"><img src="img/main-logo.svg" width="158" height="65" alt="Лого"></div>
+            <div class="main-logo"><img src="img/main-logo.svg" width="154" height="65" alt="Лого"></div>
             <nav class="main-menu-box">
               <ul class="clearfix">
                 <li class="menu-box-item"><a class="menu-item" href="#">Каталог</a>
@@ -68,31 +68,6 @@
                 <div class="user-cart">
                   <div class="user-cart-button">
                     <div class="cart-empty">Пусто</div>
-                    <div class="cart-full">2 товара
-                      <div class="popup-wrapper">
-                        <div class="popup-cart">
-                          <div class="cart-item clearfix">
-                            <button class="item-del" type="button"></button>
-                            <div class="cart-img"><img src="img/cart-img-1.png" width="33" height="33" alt="Мороженое"></div>
-                            <div class="cart-title">Пломбир с апельсиновым джемом</div>
-                            <div class="cart-calculation">1,5 кг х <span class="cart-price">200 руб.</span></div>
-                            <div class="total-cart-price">300 руб.</div>
-                          </div>
-                          <div class="cart-item clearfix">
-                            <div><button class="item-del" type="button"></button></div>
-                            <div class="cart-img"><img src="img/cart-img-2.png" width="34" height="34" alt="Мороженое"></div>
-                            <div class="cart-title">Клубничный пломбир с присыпкой из белого шоколада</div>
-                            <div class="cart-calculation">1,5 кг х <span class="cart-price">300 руб.</span></div>
-                            <div class="total-cart-price">450 руб.</div>
-                          </div>
-                          <div class="total-box">
-                            <span class="total-text">Итого:</span>
-                            <span class="total">750 руб.</span>
-                          </div>
-                          <a class="cart-btn btn" href="#">Оформить заказ</a>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -139,7 +114,7 @@
               </div>
             </div>
             <div class="row catalog-row clearfix">
-              <div class="catalog-item">
+              <div class="catalog-item hit">
                 <div class="item-hover">
                   <figure>
                     <img src="img/index-img-1.png" width="267" height="267" alt="Мороженое">
@@ -147,10 +122,9 @@
                   </figure>
                   <a class="item-hover-btn btn" href="#">Быстрый просмотр</a>
                 </div>
-                <div class="item-decoration"></div>
                 <div class="item-price">310&#8381;<span>/кг</span></div>
               </div>
-              <div class="catalog-item">
+              <div class="catalog-item hit">
                 <div class="item-hover">
                   <figure>
                     <img src="img/index-img-2.png" width="267" height="267" alt="Мороженое">
@@ -158,10 +132,9 @@
                   </figure>
                   <a class="item-hover-btn btn" href="#">Быстрый просмотр</a>
                 </div>
-                <div class="item-decoration"></div>
                 <div class="item-price">380&#8381;<span>/кг</span></div>
               </div>
-              <div class="catalog-item">
+              <div class="catalog-item hit">
                 <div class="item-hover">
                   <figure>
                     <img src="img/index-img-3.png" width="267" height="267" alt="Мороженое">
@@ -169,10 +142,9 @@
                   </figure>
                   <a class="item-hover-btn btn" href="#">Быстрый просмотр</a>
                 </div>
-                <div class="item-decoration"></div>
                 <div class="item-price">355&#8381;<span>/кг</span></div>
               </div>
-              <div class="catalog-item">
+              <div class="catalog-item hit">
                 <div class="item-hover">
                   <figure>
                     <img src="img/index-img-4.png" width="267" height="267" alt="Мороженое">
@@ -180,7 +152,6 @@
                   </figure>
                   <a class="item-hover-btn btn" href="#">Быстрый просмотр</a>
                 </div>
-                <div class="item-decoration"></div>
                 <div class="item-price">415&#8381;<span>/кг</span></div>
               </div>
             </div>
@@ -238,11 +209,17 @@
       <div class="main-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241241!2d30.320894616265132!3d59.93879686904772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1473093466604" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="map-information">
-          <p class="common-text">Адрес главного офиса и офлайн магазина:</p>
-          <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-          <span class="tel-common-text">Для заказов по телефону:</span>
-          <span class="tel">8 812 450-25-25</span>
-          <span class="schedule-text">(с 10 до 20 ежедневно)</span>
+          <div class="map-contact">
+              <p class="contact-text contact">
+                Адрес главного офиса и<br>
+                офлайн-магазина<br>
+                <span class="contacts-content">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              </p>
+              <p class="contact-text">
+                Для заказов по телефону:
+                <span class="contacts-content">8 812 450-25-25</span><br>
+                (с 10 до 20 ежедневно)
+              </p>
           <a class="btn map-btn" href="#">Форма обратной связи</a>
         </div>
       </div>
@@ -277,11 +254,11 @@
         <form class="clearfix" action="echo.htmlacademy.ru" method="post">
           <div class="form-wrapper">
             <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Как вас зовут?" required>
-            <span class="input-name">Как вас зовут?</span>
+            <label for="popup-name" class="input-text">Как вас зовут?</label>
           </div>
           <div class="form-wrapper">
             <input class="popup-mail" id="popup-mail" type="text" name="mail" placeholder="Ваша почта для ответа?" required>
-            <span class="input-name">Ваша почта для ответа?</span>
+            <label for="popup-mail" class="input-text">Ваша почта для ответа?</label>
           </div>
           <textarea class="popup-area" placeholder="Напишите что-нибудь.." required></textarea>
           <button class="popup-btn btn" type="submit">Отправить</button>

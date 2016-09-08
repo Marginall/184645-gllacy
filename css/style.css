@@ -820,7 +820,12 @@ input, select {
   max-height: 330px;
   min-height: 280px;
   margin-right: 2.22%;
+  margin-bottom: 33px;
   padding-top: 6px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover .item-hover {
@@ -851,8 +856,8 @@ input, select {
   position: absolute;
   display: block;
   width: 170px;
-  margin-top: 8px;
-  margin-left: 31px;
+  margin-top: 9px;
+  margin-left: 33px;
   padding: 10px 16px;
   color: #fff;
   font-size: 18px;
@@ -886,45 +891,46 @@ input, select {
   margin-bottom: 13px;
 }
 
-.item-decoration {
+.hit::before {
   position: absolute;
-  display: block;
   top: 6px;
-  left: 0px;
+  left: 0;
+  content: "";
+  display: block;
   width: 61px;
   height: 61px;
   background: url("../img/item-decor.png") no-repeat;
-}
-
-.catalog-item:hover .item-decoration {
-  top: 6px;
-  left: 0px;
   z-index: 40;
-}
-
-.inner-page .item-decoration {
-  display: none;
 }
 
 .item-price {
   position: absolute;
-  top: 220px;
-  left: 1px;
+  top: 226px;
+  left: 0px;
   font-size: 45px;
   font-weight: 700;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   z-index: 40;
 }
 
+.inner-page .catalog-item:nth-child(3)>.item-price {
+  left: 5px;
+}
+
+.inner-page .catalog-item:nth-child(4)>.item-price {
+  left: 6px;
+}
+
 .catalog-item:hover .item-price {
- top: 220px;
+ top: 226px;
 }
 
 .item-price span {
   font-size: 30px;
+  margin-left: 4px;
 }
 .catalog-row {
-  margin-bottom: 37px;
+  margin-bottom: 4px;
 }
 
 .features {
@@ -1053,9 +1059,9 @@ input, select {
 
 .map-information {
   position: absolute;
-  right: 19%;
+  right: 18.9%;
   top: 62px;
-  padding: 27px 27px;
+  padding: 29px 26px;
   padding-bottom: 32px;
   color: #323232;
   font-size: 14px;
@@ -1064,37 +1070,25 @@ input, select {
 }
 
 .map-information p {
-  margin: 0;
+  margin-top: 0;
 }
 
-.map-information .common-text {
-  width: 160px;
+.contact-text {
+  width: 180px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.map-information .address {
-  width: 222px;
-  margin-bottom: 18px;
+.contact-text.contact {
+  width: 245px;
+  margin-bottom: 17px;
+}
+
+.contacts-content {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 26px;
   font-weight: 700;
-}
-
-.tel-common-text {
-  display: block;
-  margin-bottom: 4px;
-}
-
-.map-information .tel {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-}
-
-.map-information .schedule-text {
-  display: block;
-  margin-bottom: 22px;
 }
 
 .main-map .btn {
@@ -1105,6 +1099,9 @@ input, select {
 .main-footer {
   width: 100%;
   padding-bottom: 25px;
+}
+
+.inner-page .border {
   border-top: 1px solid #a9bbb1;
 }
 
@@ -1711,7 +1708,7 @@ input, select {
   position: relative;
 }
 
-.input-name {
+.input-text {
   position: absolute;
   top: -20px;
   left: 10px;
@@ -1720,8 +1717,8 @@ input, select {
   font-size: 11px;
 }
 
-.popup-name:focus + .input-name,
-.popup-mail:focus + .input-name {
+.popup-name:focus + .input-text,
+.popup-mail:focus + .input-text {
   display: block;
 }
 
@@ -1797,7 +1794,7 @@ input, select {
   display: block;
 }
 
-@media screen and (max-width: 901px)  {
+@media screen and (max-width: 1199px)  {
   .promo-text { margin-bottom: 21px;}
   .catalog-sort { margin-bottom: 32px;}
   .catalog-item { }
