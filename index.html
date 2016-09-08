@@ -41,7 +41,10 @@
                   <div class="popup-wrapper">
                     <div class="popup-search">
                       <form action="echo.htmlacademy.ru" method="post">
-                        <input class="search" type="search" placeholder="Что ищем?">
+                        <div class="inner-wrapper">
+                          <input class="search" id="search" type="search" placeholder="Что ищем?">
+                          <label class="input-text" for="search">Что ищем?</label>
+                        </div>
                         <input class="search-submit" type="submit">
                       </form>
                     </div>
@@ -52,8 +55,14 @@
                   <div class="popup-wrapper">
                     <div class="popup-login">
                       <form action="echo.htmlacademy.ru" method="post">
-                        <input class="login-mail" type="text" name="mail" placeholder="Электронная почта">
-                        <input class="login-password" type="password" name="password" placeholder="Пароль">
+                        <div class="inner-wrapper">
+                          <input class="login-mail" id="login" type="text" name="mail" placeholder="Электронная почта">
+                          <label for="login" class="input-text">Электронная почта</label>
+                        </div>
+                        <div class="inner-wrapper">
+                          <input class="login-password" id="password" type="password" name="password" placeholder="Пароль">
+                          <label for="password" class="input-text">Пароль</label>
+                        </div>
                         <div class="login-navigation clearfix">
                           <a class="login-btn btn" href="#">Войти</a>
                           <div class="col">
@@ -160,30 +169,18 @@
                   по продаже мороженого собственного производства на развес</h2>
               <div class="row clearfix">
                 <div class="left-column left clearfix">
-                  <div class="features-item clearfix">
-                    <img class="features-icon" src="img/features-icon-1.svg" width="47" height="47" alt="icon">
-                    <p>Все наше мороженое изготавливается на собственном производстве,
-                    с использованием современного оборудования
-                    и проверенных временем технологий.</p>
-                  </div>
-                  <div class="features-item clearfix">
-                    <img class="features-icon" src="img/features-icon-2.svg" width="47" height="47" alt="icon">
-                    <p class="features-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-                      Все дополнительные ингредиенты и добавки произведены из натурального,
-                      экологически чистого сырья. </p>
-                  </div>
+                  <p class="features-text">Все наше мороженое изготавливается на собственном производстве,
+                  с использованием современного оборудования
+                  и проверенных временем технологий.</p>
+                  <p class="features-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+                  Все дополнительные ингредиенты и добавки произведены из натурального,
+                  экологически чистого сырья. </p>
                 </div>
                 <div class="right-column right clearfix">
-                  <div class="features-item clearfix">
-                    <img class="features-icon" src="img/features-icon-3.svg" width="47" height="47" alt="icon">
-                    <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
-                    с которыми нас связывает долговременное сотрудничество.</p>
-                  </div>
-                  <div class="features-item clearfix">
-                    <img class="features-icon" src="img/features-icon-4.svg" width="47" height="47" alt="icon">
-                    <p class="features-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-                    которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-                  </div>
+                  <p class="features-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+                  с которыми нас связывает долговременное сотрудничество.</p>
+                  <p class="features-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+                  которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
                 </div>
               </div>
             </div>
@@ -198,7 +195,10 @@
                 что у нас происходит.
                 Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
                 <form class="newsletter clearfix" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="email-user" type="text" placeholder="Электронная почта">
+                  <div class="inner-wrapper">
+                    <input class="email-user" id="email" type="text" placeholder="Электронная почта">
+                    <label for="email" class="input-text">Электронная почта</label>
+                  </div>
                   <button class="btn" type="submit">Отправить</button>
                 </form>
               </div>
@@ -262,7 +262,10 @@
             <input class="popup-mail" id="popup-mail" type="text" name="mail" placeholder="Ваша почта для ответа?" required>
             <label for="popup-mail" class="input-text">Ваша почта для ответа?</label>
           </div>
-          <textarea class="popup-area" placeholder="Напишите что-нибудь.." required></textarea>
+          <div class="form-wrapper">
+            <textarea class="popup-area" id="area" placeholder="Напишите что-нибудь.." required></textarea>
+            <label for="area" class="input-text">Напишите что-нибудь..</label>
+          </div>
           <button class="popup-btn btn" type="submit">Отправить</button>
           <button class="popup-form-close" type="button"></button>
         </form>
