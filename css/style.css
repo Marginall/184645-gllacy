@@ -1927,10 +1927,11 @@ textarea:-ms-input-placeholder {
           transform: rotate(-45deg);
 }
 
-.modal-overlay {
+.modal-overlay::after {
   position: fixed;
   top: 0;
   left: 0;
+  content: "";
   display: none;
   width: 100%;
   height: 100%;
@@ -1938,7 +1939,7 @@ textarea:-ms-input-placeholder {
   z-index: 90;
 }
 
-.modal-overlay-show {
+.modal-overlay.modal-overlay-show::after {
   display: block;
 }
 
