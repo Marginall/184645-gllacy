@@ -635,13 +635,23 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
   line-height: 20px;
 }
 
-.login-navigation a {
+.login-link {
   display: inline;
   color: #323232;
   font-family: Roboto, Arial, sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-align: left;
+}
+
+.login-link:hover {
+  color: #e84d37;
+  border-color: #f9cdc4;
+}
+
+.login-link:active {
+  color: #e84d37;
+  border-color: #f9cdc4;
 }
 
 .user-cart {
