@@ -821,10 +821,12 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
 
 .total-text {
   display: inline-block;
+  vertical-align: top;
 }
 
 .total {
   display: inline-block;
+  vertical-align: top;
   color: #000;
   font-size: 15px;
   font-weight: 700;
