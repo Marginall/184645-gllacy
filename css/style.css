@@ -1184,11 +1184,21 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
 
 .main-map iframe {
   width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.main-map .wrapper {
+  height: 100%;
 }
 
 .map-information {
   position: absolute;
-  right: 19%;
+  right: 2.3%;
   top: 62px;
   padding: 28px 27px;
   padding-bottom: 32px;
@@ -1196,6 +1206,7 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
   font-size: 14px;
   background-color: #fff;
   border-radius: 10px;
+  z-index: 20;
 }
 
 .map-information p {
