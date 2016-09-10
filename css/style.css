@@ -484,12 +484,12 @@ input, select {
 
 .login-mail:hover, .login-password:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
-  padding: 19px 11px;
+  padding: 0px 11px;
 }
 
 .login-mail:focus, .login-password:focus {
   border: 2px solid #8fbdec;
-  padding: 19px 11px;
+  padding: 0px 11px;
 }
 
 .search:focus {
@@ -615,7 +615,7 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
 .login-mail, .login-password {
   width: 240px;
   margin-bottom: 20px;
-  padding: 20px 12px;
+  padding: 0px 12px;
 }
 
 .login-navigation .login-btn  {
@@ -1810,23 +1810,41 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
   width: 267px;
   height: 43px;
   box-sizing: border-box;
-  padding: 14px 14px;
+  padding: 11px 14px;
   margin-bottom: 20px;
   color: #323232;
+  font-size: 16px;
   font-weight: 700;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
 }
 
+.popup-form input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+.popup-form input::-moz-placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+.popup-form input:-moz-placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+.popup-form input:-ms-input-placeholder {
+  color: #999999;
+  font-weight: 500;
+}
+
 .popup-name:hover, .popup-mail:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
-  padding: 13px 13px;
+  padding: 0 13px;
 }
 
 .popup-name:focus, .popup-mail:focus {
   border: 2px solid #8fbdec;
-  padding: 13px 13px;
+  padding: 0 13px;
 }
 
 .popup-form .form-wrapper {
@@ -1855,6 +1873,7 @@ textarea:focus:-ms-input-placeholder      {color:#fff;}
   margin-bottom: 20px;
   padding: 10px 14px;
   color: #323232;
+  font-size: 16px;
   font-weight: 700;
   background-color: #fff;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1866,14 +1885,17 @@ textarea::-webkit-input-placeholder {
   color: #999999;
   font-weight: 500;
 }
+
 textarea::-moz-placeholder {
   color: #999999;
   font-weight: 500;
 }
+
 textarea:-moz-placeholder {
   color: #999999;
   font-weight: 500;
 }
+
 textarea:-ms-input-placeholder {
   color: #999999;
   font-weight: 500;
